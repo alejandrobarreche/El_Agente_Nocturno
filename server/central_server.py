@@ -105,43 +105,53 @@ class CentralServer:
     def _setup_rabbitmq(self):
         """
         Configura las conexiones con RabbitMQ para consumir alertas y publicar tareas.
+        Implementa reconexión automática en caso de fallo.
         """
-        # Configurar consumidor para alertas de espías
-        self.alert_consumer = RabbitMQConsumer(
-            host=self.rabbitmq_host,
-            port=self.rabbitmq_port,
-            exchange='spy_alerts',
-            exchange_type='topic',
-            queue_name='server_alerts_queue',
-            binding_keys=['alert.*']  # Escuchar todas las alertas
-        )
+        while True:
+            try:
+                # Configurar consumidor para alertas de espías
+                self.alert_consumer = RabbitMQConsumer(
+                    host=self.rabbitmq_host,
+                    port=self.rabbitmq_port,
+                    exchange='spy_alerts',
+                    exchange_type='topic',
+                    queue_name='server_alerts_queue',
+                    binding_keys=['alert.*']  # Escuchar todas las alertas
+                )
 
-        # Configurar consumidor para actualizaciones de estado de agentes nocturnos
-        self.agent_status_consumer = RabbitMQConsumer(
-            host=self.rabbitmq_host,
-            port=self.rabbitmq_port,
-            exchange='agent_status',
-            exchange_type='topic',
-            queue_name='server_status_queue',
-            binding_keys=['status.*']  # Escuchar todos los estados
-        )
+                # Configurar consumidor para actualizaciones de estado de agentes nocturnos
+                self.agent_status_consumer = RabbitMQConsumer(
+                    host=self.rabbitmq_host,
+                    port=self.rabbitmq_port,
+                    exchange='agent_status',
+                    exchange_type='topic',
+                    queue_name='server_status_queue',
+                    binding_keys=['status.*']  # Escuchar todos los estados
+                )
 
-        # Configurar publicador para tareas de agentes nocturnos
-        self.task_publisher = RabbitMQPublisher(
-            host=self.rabbitmq_host,
-            port=self.rabbitmq_port,
-            exchange='night_tasks',
-            exchange_type='direct'
-        )
+                # Configurar publicador para tareas de agentes nocturnos
+                self.task_publisher = RabbitMQPublisher(
+                    host=self.rabbitmq_host,
+                    port=self.rabbitmq_port,
+                    exchange='night_tasks',
+                    exchange_type='direct'
+                )
 
-        # Conectar componentes
-        self.alert_consumer.connect()
-        self.agent_status_consumer.connect()
-        self.task_publisher.connect()
+                # Conectar componentes
+                self.alert_consumer.connect()
+                self.agent_status_consumer.connect()
+                self.task_publisher.connect()
 
-        # Iniciar consumo de mensajes
-        self.alert_consumer.start_consuming(self._handle_alert)
-        self.agent_status_consumer.start_consuming(self._handle_agent_status)
+                # Iniciar consumo de mensajes
+                self.alert_consumer.start_consuming(self._handle_alert)
+                self.agent_status_consumer.start_consuming(self._handle_agent_status)
+
+                logger.info("Conexión con RabbitMQ establecida correctamente")
+                break  # Salir del bucle si la conexión es exitosa
+
+            except Exception as e:
+                logger.error(f"Error al configurar RabbitMQ: {e}. Reintentando en 5 segundos...")
+                time.sleep(5)  # Esperar antes de reintentar
 
     def _start_worker_threads(self):
         """
@@ -375,6 +385,9 @@ class CentralServer:
                                         alert = self.active_alerts[task_id]['alert']
                                         self.alert_queue.put((alert, f"alert.{alert.alert_type}"))
 
+                            # Notificar al administrador sobre el agente inactivo
+                            self._notify_admin_inactive_agent(agent_id)
+
                             logger.info(f"Eliminando agente inactivo {agent_id}")
                             self.night_agents.pop(agent_id)
 
@@ -384,6 +397,20 @@ class CentralServer:
             except Exception as e:
                 logger.error(f"Error en el monitor de agentes: {e}")
                 time.sleep(1)  # Breve pausa para evitar ciclos de error constantes
+
+    def _notify_admin_inactive_agent(self, agent_id: str):
+        """
+        Notifica al administrador que un agente se ha marcado como inactivo.
+
+        Args:
+            agent_id (str): ID del agente inactivo.
+        """
+        try:
+            # Aquí puedes implementar un mecanismo de notificación, como enviar un correo electrónico.
+            # Por ahora, simplemente registraremos un mensaje crítico.
+            logger.critical(f"NOTIFICACIÓN: El agente {agent_id} ha sido marcado como inactivo.")
+        except Exception as e:
+            logger.error(f"Error al notificar al administrador sobre el agente inactivo {agent_id}: {e}")
 
     def get_status(self) -> Dict:
         """

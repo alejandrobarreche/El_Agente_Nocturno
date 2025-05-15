@@ -9,6 +9,7 @@ import socket
 import json
 import logging
 import pickle
+import time
 from typing import Any, Dict, Optional
 
 from common.message import Message
@@ -18,7 +19,7 @@ logger = logging.getLogger(__name__)
 class SocketClient:
     """Cliente de sockets para la comunicación con el servidor central."""
 
-    def __init__(self, host: str = 'localhost', port: int = 5000, buffer_size: int = 4096):
+    def __init__(self, host: str = 'localhost', port: int = 5000, buffer_size: int = 4096, max_message_size: int = 1048576):
         """
         Inicializa un nuevo cliente de sockets.
 
@@ -26,10 +27,12 @@ class SocketClient:
             host: La dirección IP o nombre de host del servidor.
             port: El puerto del servidor.
             buffer_size: El tamaño del buffer para recibir datos.
+            max_message_size: Tamaño máximo permitido para los mensajes (en bytes).
         """
         self.host = host
         self.port = port
         self.buffer_size = buffer_size
+        self.max_message_size = max_message_size
         self.client_socket = None
 
     def connect(self) -> bool:
@@ -48,6 +51,24 @@ class SocketClient:
             logger.error(f"Error al conectar con el servidor: {e}")
             return False
 
+    def _reconnect(self) -> bool:
+        """
+        Intenta reconectar con el servidor.
+
+        Returns:
+            bool: True si la reconexión fue exitosa, False en caso contrario.
+        """
+        logger.warning("Intentando reconectar con el servidor...")
+        self.close()
+        for attempt in range(3):  # Intentar reconectar 3 veces
+            if self.connect():
+                logger.info("Reconexión exitosa con el servidor")
+                return True
+            logger.warning(f"Reintento {attempt + 1}/3 fallido. Esperando...")
+            time.sleep(2)
+        logger.error("No se pudo reconectar con el servidor después de varios intentos")
+        return False
+
     def send_message(self, message: Message) -> bool:
         """
         Envía un mensaje al servidor.
@@ -59,8 +80,9 @@ class SocketClient:
             bool: True si el mensaje fue enviado exitosamente, False en caso contrario.
         """
         if not self.client_socket:
-            logger.error("No hay conexión establecida con el servidor")
-            return False
+            logger.error("No hay conexión establecida con el servidor. Intentando reconectar...")
+            if not self._reconnect():
+                return False
 
         try:
             # Serializar el mensaje usando pickle para mantener la estructura del objeto
@@ -87,8 +109,9 @@ class SocketClient:
             Message: El mensaje recibido o None si ocurrió un error.
         """
         if not self.client_socket:
-            logger.error("No hay conexión establecida con el servidor")
-            return None
+            logger.error("No hay conexión establecida con el servidor. Intentando reconectar...")
+            if not self._reconnect():
+                return None
 
         try:
             # Recibir primero el tamaño del mensaje
@@ -98,6 +121,11 @@ class SocketClient:
                 return None
 
             message_size = int.from_bytes(size_bytes, byteorder='big')
+
+            # Validar el tamaño del mensaje
+            if message_size > self.max_message_size:
+                logger.error(f"Mensaje recibido excede el tamaño máximo permitido ({message_size} bytes)")
+                return None
 
             # Recibir el mensaje completo
             chunks = []

@@ -41,6 +41,19 @@ class AlertMessage(Message):
     def __post_init__(self):
         self.message_type = MessageType.ALERT
 
+        # Validar posición
+        if not isinstance(self.position, tuple) or len(self.position) != 2:
+            raise ValueError(f"Posición inválida: {self.position}. Debe ser una tupla (latitud, longitud).")
+
+        # Validar nivel de emergencia
+        valid_levels = ["BAJA", "MEDIA", "ALTA", "CRÍTICA"]
+        if self.emergency_level not in valid_levels:
+            raise ValueError(f"Nivel de emergencia inválido: {self.emergency_level}. Debe ser uno de {valid_levels}.")
+
+        # Validar tipo de emergencia
+        if not isinstance(self.emergency_type, str) or not self.emergency_type:
+            raise ValueError("El tipo de emergencia debe ser una cadena no vacía.")
+
     @classmethod
     def from_json(cls, json_str: str) -> 'AlertMessage':
         """Crea un mensaje de alerta desde su representación JSON"""
@@ -63,6 +76,14 @@ class TaskMessage(Message):
 
     def __post_init__(self):
         self.message_type = MessageType.TASK
+
+        # Validar posición
+        if not isinstance(self.position, tuple) or len(self.position) != 2:
+            raise ValueError(f"Posición inválida: {self.position}. Debe ser una tupla (latitud, longitud).")
+
+        # Validar duración estimada
+        if not isinstance(self.estimated_duration, int) or self.estimated_duration < 0:
+            raise ValueError(f"Duración estimada inválida: {self.estimated_duration}. Debe ser un entero no negativo.")
 
     @classmethod
     def from_json(cls, json_str: str) -> 'TaskMessage':

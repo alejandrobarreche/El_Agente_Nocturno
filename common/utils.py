@@ -98,20 +98,28 @@ def dict_to_json(data):
 
 def json_to_dict(json_str):
     """
-    Convierte una cadena JSON a un diccionario.
+    Convierte una cadena JSON a un diccionario. Intenta recuperar datos parciales si el JSON está mal formado.
 
     Args:
         json_str (str): Cadena JSON a convertir
 
     Returns:
-        dict: Diccionario resultante
+        dict: Diccionario resultante o vacío si no se puede recuperar
     """
     try:
         return json.loads(json_str)
     except json.JSONDecodeError as e:
         logger.error(f"Error decodificando JSON: {e}")
         logger.debug(f"Cadena problemática: {json_str}")
-        return {}
+
+        # Intentar recuperar datos parciales
+        try:
+            # Eliminar caracteres problemáticos y volver a intentar
+            cleaned_json_str = json_str.replace("\n", "").replace("\r", "").strip()
+            return json.loads(cleaned_json_str)
+        except json.JSONDecodeError as e2:
+            logger.error(f"No se pudo recuperar datos parciales del JSON: {e2}")
+            return {}
 
 def safe_sleep(seconds):
     """
@@ -124,3 +132,17 @@ def safe_sleep(seconds):
         time.sleep(seconds)
     except KeyboardInterrupt:
         pass
+
+def save_failed_message(message):
+    """
+    Guarda un mensaje fallido en un archivo para análisis posterior.
+
+    Args:
+        message (Message): El mensaje que no se pudo enviar.
+    """
+    try:
+        with open("failed_alerts.log", "a") as file:
+            file.write(message.to_json() + "\n")
+    except Exception as e:
+        logger = setup_logger("failed_message_logger", "failed_messages.log")
+        logger.error(f"Error al guardar el mensaje fallido: {e}")

@@ -4,14 +4,14 @@ Utilidades para manejar coordenadas geográficas y cálculos relacionados.
 
 import math
 import random
-from typing import Tuple, List
+from typing import Tuple, List, Dict
 
 import config
 
 
 def generate_random_position() -> Tuple[float, float]:
     """
-    Genera una posición aleatoria dentro de los límites configurados
+    Genera una posición aleatoria dentro de los límites configurados.
 
     Returns:
         tuple: (latitud, longitud)
@@ -45,11 +45,25 @@ def calculate_distance(pos1: Tuple[float, float], pos2: Tuple[float, float]) -> 
     dlon = lon2 - lon1
 
     # Fórmula de Haversine
-    a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    a = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     distance = earth_radius * c
 
     return distance
+
+
+def validate_coordinates(position: Tuple[float, float]) -> bool:
+    """
+    Valida que las coordenadas estén dentro de los límites configurados.
+
+    Args:
+        position: Tupla (latitud, longitud)
+
+    Returns:
+        bool: True si las coordenadas son válidas, False en caso contrario.
+    """
+    lat, lon = position
+    return config.MAP_MIN_LAT <= lat <= config.MAP_MAX_LAT and config.MAP_MIN_LON <= lon <= config.MAP_MAX_LON
 
 
 def find_closest_position(target_pos: Tuple[float, float],
@@ -118,58 +132,14 @@ def convert_pixel_to_geo(pixel: Tuple[int, int], width: int, height: int) -> Tup
 
     return (lat, lon)
 
-def generate_random_position():
-    """
-    Genera coordenadas aleatorias dentro de los límites del mapa.
 
-    Returns:
-        tuple: Par de coordenadas (latitud, longitud)
-    """
-    lat = random.uniform(config.MAP_MIN_LAT, config.MAP_MAX_LAT)
-    lon = random.uniform(config.MAP_MIN_LON, config.MAP_MAX_LON)
-    return (lat, lon)
-
-def calculate_distance(pos1, pos2):
-    """
-    Calcula la distancia entre dos puntos geográficos usando la fórmula Haversine.
-
-    Args:
-        pos1 (tuple): Coordenadas del primer punto (latitud, longitud)
-        pos2 (tuple): Coordenadas del segundo punto (latitud, longitud)
-
-    Returns:
-        float: Distancia en kilómetros
-    """
-    # Radio de la Tierra en kilómetros
-    earth_radius = 6371.0
-
-    lat1, lon1 = pos1
-    lat2, lon2 = pos2
-
-    # Convertir grados a radianes
-    lat1_rad = math.radians(lat1)
-    lon1_rad = math.radians(lon1)
-    lat2_rad = math.radians(lat2)
-    lon2_rad = math.radians(lon2)
-
-    # Diferencias en radianes
-    dlat = lat2_rad - lat1_rad
-    dlon = lon2_rad - lon1_rad
-
-    # Fórmula Haversine
-    a = math.sin(dlat/2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlon/2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-    distance = earth_radius * c
-
-    return distance
-
-def get_nearest_agent(current_pos, agents_positions):
+def get_nearest_agent(current_pos: Tuple[float, float], agents_positions: Dict[str, Tuple[float, float]]) -> Tuple[str, float]:
     """
     Encuentra el agente más cercano a una posición dada.
 
     Args:
-        current_pos (tuple): Posición actual (latitud, longitud)
-        agents_positions (dict): Diccionario de {agent_id: position}
+        current_pos: Posición actual (latitud, longitud)
+        agents_positions: Diccionario de {agent_id: position}
 
     Returns:
         tuple: (agent_id, distancia) del agente más cercano
@@ -181,6 +151,9 @@ def get_nearest_agent(current_pos, agents_positions):
     min_distance = float('inf')
 
     for agent_id, pos in agents_positions.items():
+        if not validate_coordinates(pos):
+            continue  # Ignorar posiciones fuera de los límites
+
         dist = calculate_distance(current_pos, pos)
         if dist < min_distance:
             min_distance = dist
@@ -188,12 +161,13 @@ def get_nearest_agent(current_pos, agents_positions):
 
     return nearest, min_distance
 
-def format_position(position):
+
+def format_position(position: Tuple[float, float]) -> str:
     """
     Formatea una posición para mostrarla de forma legible.
 
     Args:
-        position (tuple): Par de coordenadas (latitud, longitud)
+        position: Par de coordenadas (latitud, longitud)
 
     Returns:
         str: Posición formateada
