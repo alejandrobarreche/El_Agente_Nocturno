@@ -41,6 +41,19 @@ def start_visualization():
             return None
     return None
 
+def launch_server():
+    from server.central_server import CentralServer
+    server = CentralServer()
+    server.start()
+
+def launch_night_agent(agent_id, position):
+    agent = NightAgent(agent_id, position)
+    agent.run()
+
+def launch_spy(spy_id, position):
+    spy = Spy(spy_id, position)
+    spy.run()
+
 def main():
     """Función principal que inicia todos los componentes del sistema"""
     logger.info("Iniciando simulación del sistema de agentes encubiertos")
@@ -50,7 +63,7 @@ def main():
 
     # Iniciar servidor central
     logger.info("Iniciando servidor central...")
-    server_process = mp.Process(target=CentralServer().start)
+    server_process = mp.Process(target=launch_server)
     processes.append(server_process)
     server_process.start()
 
@@ -63,7 +76,8 @@ def main():
         position = generate_random_position()
         agent_id = f"AGENT{i+1:03d}"
         agent_process = mp.Process(
-            target=NightAgent(agent_id, position).run
+            target=launch_night_agent,
+            args=(agent_id, position)
         )
         processes.append(agent_process)
         agent_process.start()
@@ -74,7 +88,8 @@ def main():
         position = generate_random_position()
         spy_id = f"SPY{i+1:03d}"
         spy_process = mp.Process(
-            target=Spy(spy_id, position).run
+            target=launch_spy,
+            args=(spy_id, position)
         )
         processes.append(spy_process)
         spy_process.start()

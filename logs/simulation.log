@@ -1,0 +1,387 @@
+2025-05-15 17:18:01,451 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:18:01,451 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:19:04,802 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:19:04,802 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:30:04,511 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:30:04,511 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:34:16,233 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:34:16,244 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:34:16,244 [INFO] server.central_server: Iniciando servidor central...
+2025-05-15 17:34:16,253 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:34:18,297 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=612, family=23, type=1, proto=6, laddr=('::', 51684, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:34:18,298 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:34:18,298 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:18,298 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:34:20,345 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=612, family=2, type=1, proto=6, laddr=('0.0.0.0', 51687)>; error=10061 (Unknown error)
+2025-05-15 17:34:20,345 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:34:20,345 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:25,350 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:34:27,389 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=628, family=23, type=1, proto=6, laddr=('::', 51688, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:34:27,389 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:34:27,390 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:27,390 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:34:29,434 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=628, family=2, type=1, proto=6, laddr=('0.0.0.0', 51689)>; error=10061 (Unknown error)
+2025-05-15 17:34:29,435 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:34:29,435 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:34,447 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:34:36,489 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=824, family=23, type=1, proto=6, laddr=('::', 51691, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:34:36,489 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:34:36,489 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:36,490 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:34:38,531 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=824, family=2, type=1, proto=6, laddr=('0.0.0.0', 51695)>; error=10061 (Unknown error)
+2025-05-15 17:34:38,531 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:34:38,531 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:38,531 [ERROR] pika.adapters.utils.connection_workflow: AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2025-05-15 17:34:38,531 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:38,532 [ERROR] pika.adapters.blocking_connection: Connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:38,532 [ERROR] pika.adapters.blocking_connection: Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-05-15 17:34:38,533 [ERROR] communication.rabbitmq.consumer: Error al conectar con RabbitMQ: 
+2025-05-15 17:34:38,534 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:34:40,580 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=668, family=23, type=1, proto=6, laddr=('::', 51698, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:34:40,581 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:34:40,581 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:40,581 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:34:42,635 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=668, family=2, type=1, proto=6, laddr=('0.0.0.0', 51699)>; error=10061 (Unknown error)
+2025-05-15 17:34:42,635 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:34:42,636 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:47,649 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:34:49,695 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=612, family=23, type=1, proto=6, laddr=('::', 51702, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:34:49,695 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:34:49,695 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:49,696 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:34:51,706 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=780, family=2, type=1, proto=6, laddr=('0.0.0.0', 51703)>; error=10061 (Unknown error)
+2025-05-15 17:34:51,706 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:34:51,706 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:56,718 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:34:58,738 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=648, family=23, type=1, proto=6, laddr=('::', 51704, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:34:58,738 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:34:58,738 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:34:58,739 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:00,747 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=648, family=2, type=1, proto=6, laddr=('0.0.0.0', 51705)>; error=10061 (Unknown error)
+2025-05-15 17:35:00,748 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:00,748 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:00,748 [ERROR] pika.adapters.utils.connection_workflow: AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2025-05-15 17:35:00,748 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:00,748 [ERROR] pika.adapters.blocking_connection: Connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:00,748 [ERROR] pika.adapters.blocking_connection: Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-05-15 17:35:00,749 [ERROR] communication.rabbitmq.consumer: Error al conectar con RabbitMQ: 
+2025-05-15 17:35:00,751 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:02,776 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=628, family=23, type=1, proto=6, laddr=('::', 51708, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:02,776 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:02,776 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:02,777 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:04,825 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=628, family=2, type=1, proto=6, laddr=('0.0.0.0', 51710)>; error=10061 (Unknown error)
+2025-05-15 17:35:04,825 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:04,825 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:09,836 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:11,894 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=628, family=23, type=1, proto=6, laddr=('::', 51712, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:11,894 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:11,895 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:11,895 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:13,940 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=608, family=2, type=1, proto=6, laddr=('0.0.0.0', 51713)>; error=10061 (Unknown error)
+2025-05-15 17:35:13,940 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:13,940 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:18,952 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:20,977 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=660, family=23, type=1, proto=6, laddr=('::', 51714, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:20,977 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:20,977 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:20,977 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:23,011 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=660, family=2, type=1, proto=6, laddr=('0.0.0.0', 51715)>; error=10061 (Unknown error)
+2025-05-15 17:35:23,012 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:23,012 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:23,012 [ERROR] pika.adapters.utils.connection_workflow: AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2025-05-15 17:35:23,012 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:23,012 [ERROR] pika.adapters.blocking_connection: Connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:23,012 [ERROR] pika.adapters.blocking_connection: Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-05-15 17:35:23,013 [ERROR] communication.rabbitmq.publisher: Error al conectar con RabbitMQ: 
+2025-05-15 17:35:23,014 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:25,051 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=720, family=23, type=1, proto=6, laddr=('::', 51722, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:25,052 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:25,052 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:25,052 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:27,090 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=720, family=2, type=1, proto=6, laddr=('0.0.0.0', 51723)>; error=10061 (Unknown error)
+2025-05-15 17:35:27,090 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:27,090 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:32,101 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:34,148 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=608, family=23, type=1, proto=6, laddr=('::', 51724, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:34,149 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:34,149 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:34,149 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:36,173 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=608, family=2, type=1, proto=6, laddr=('0.0.0.0', 51726)>; error=10061 (Unknown error)
+2025-05-15 17:35:36,173 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:36,173 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:41,184 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:43,215 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=804, family=23, type=1, proto=6, laddr=('::', 51729, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:43,216 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:43,216 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:43,216 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:45,265 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=804, family=2, type=1, proto=6, laddr=('0.0.0.0', 51730)>; error=10061 (Unknown error)
+2025-05-15 17:35:45,265 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:45,265 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:45,265 [ERROR] pika.adapters.utils.connection_workflow: AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2025-05-15 17:35:45,266 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:45,266 [ERROR] pika.adapters.blocking_connection: Connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:45,266 [ERROR] pika.adapters.blocking_connection: Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-05-15 17:35:45,267 [ERROR] communication.rabbitmq.consumer: Error al conectar con RabbitMQ: 
+2025-05-15 17:35:45,268 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:47,308 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=816, family=23, type=1, proto=6, laddr=('::', 51737, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:47,308 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:47,308 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:47,309 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:49,330 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=816, family=2, type=1, proto=6, laddr=('0.0.0.0', 51738)>; error=10061 (Unknown error)
+2025-05-15 17:35:49,330 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:49,330 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:54,339 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:35:56,373 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=608, family=23, type=1, proto=6, laddr=('::', 51740, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:35:56,373 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:35:56,373 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:35:56,373 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:35:58,393 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=608, family=2, type=1, proto=6, laddr=('0.0.0.0', 51744)>; error=10061 (Unknown error)
+2025-05-15 17:35:58,393 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:35:58,393 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:36:03,406 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:36:05,446 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=804, family=23, type=1, proto=6, laddr=('::', 51750, 0, 0)>; error=10061 (Unknown error)
+2025-05-15 17:36:05,447 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2025-05-15 17:36:05,447 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:36:05,447 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2025-05-15 17:36:07,484 [ERROR] pika.adapters.utils.io_services_utils: Socket failed to connect: <socket.socket fd=804, family=2, type=1, proto=6, laddr=('0.0.0.0', 51751)>; error=10061 (Unknown error)
+2025-05-15 17:36:07,484 [ERROR] pika.adapters.utils.connection_workflow: TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2025-05-15 17:36:07,484 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:36:07,485 [ERROR] pika.adapters.utils.connection_workflow: AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2025-05-15 17:36:07,485 [ERROR] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:36:07,485 [ERROR] pika.adapters.blocking_connection: Connection workflow failed: AMQPConnectionWorkflowFailed: 6 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2025-05-15 17:36:07,485 [ERROR] pika.adapters.blocking_connection: Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2025-05-15 17:36:07,485 [ERROR] communication.rabbitmq.consumer: Error al conectar con RabbitMQ: 
+2025-05-15 17:36:07,486 [INFO] server.central_server: Servidor central en funcionamiento
+2025-05-15 17:46:32,626 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:46:32,626 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:46:32,626 [INFO] server.central_server: Iniciando servidor central...
+2025-05-15 17:46:32,637 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:46:32,638 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=552, family=23, type=1, proto=6, laddr=('::1', 52857, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:46:32,639 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C8974D7F0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C8974D7F0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:46:32,689 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C8974D7F0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,690 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C8974D7F0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,690 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C8974D7F0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,690 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:46:32,713 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: spy_alerts, cola: server_alerts_queue
+2025-05-15 17:46:32,713 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: alert.*
+2025-05-15 17:46:32,719 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:46:32,720 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=824, family=23, type=1, proto=6, laddr=('::1', 52860, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:46:32,720 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89770410>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89770410> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:46:32,769 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89770410> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,770 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89770410> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,770 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89770410> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,770 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:46:32,790 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: agent_status, cola: server_status_queue
+2025-05-15 17:46:32,790 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: status.*
+2025-05-15 17:46:32,792 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:46:32,792 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=816, family=23, type=1, proto=6, laddr=('::1', 52863, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:46:32,793 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89771590>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89771590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:46:32,849 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89771590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,849 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89771590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,849 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017C89771590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:46:32,850 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:46:32,857 [INFO] communication.rabbitmq.publisher: Conectado a RabbitMQ en localhost:5672, exchange: night_tasks
+2025-05-15 17:46:32,860 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_alerts_queue
+2025-05-15 17:46:32,863 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_status_queue
+2025-05-15 17:46:32,863 [INFO] server.central_server: Servidor central en funcionamiento
+2025-05-15 17:47:22,795 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:47:22,795 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:47:23,143 [INFO] server.central_server: Iniciando servidor central...
+2025-05-15 17:47:23,151 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:47:23,152 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=928, family=23, type=1, proto=6, laddr=('::1', 52882, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:47:23,152 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E47DA90>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E47DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:47:23,247 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E47DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,248 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E47DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,248 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E47DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,248 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:47:23,261 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: spy_alerts, cola: server_alerts_queue
+2025-05-15 17:47:23,261 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: alert.*
+2025-05-15 17:47:23,264 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:47:23,264 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=960, family=23, type=1, proto=6, laddr=('::1', 52885, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:47:23,265 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B0F50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:47:23,313 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,314 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,314 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,314 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:47:23,319 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: agent_status, cola: server_status_queue
+2025-05-15 17:47:23,319 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: status.*
+2025-05-15 17:47:23,321 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:47:23,321 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=972, family=23, type=1, proto=6, laddr=('::1', 52888, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:47:23,322 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B20D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:47:23,373 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,373 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,374 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002362E4B20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:47:23,374 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:47:23,377 [INFO] communication.rabbitmq.publisher: Conectado a RabbitMQ en localhost:5672, exchange: night_tasks
+2025-05-15 17:47:23,380 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_alerts_queue
+2025-05-15 17:47:23,382 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_status_queue
+2025-05-15 17:47:23,383 [INFO] server.central_server: Servidor central en funcionamiento
+2025-05-15 17:47:24,805 [INFO] simulation: Iniciando 3 agentes nocturnos...
+2025-05-15 17:47:24,806 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.730033°N, 74.045162°W
+2025-05-15 17:49:42,947 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 17:49:42,948 [INFO] simulation: Iniciando servidor central...
+2025-05-15 17:49:43,274 [INFO] server.central_server: Iniciando servidor central...
+2025-05-15 17:49:43,283 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:49:43,283 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=752, family=23, type=1, proto=6, laddr=('::1', 52906, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:49:43,284 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04AD6DA90>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04AD6DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:49:43,337 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04AD6DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,337 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04AD6DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,337 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04AD6DA90> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,337 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:49:43,343 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: spy_alerts, cola: server_alerts_queue
+2025-05-15 17:49:43,343 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: alert.*
+2025-05-15 17:49:43,345 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:49:43,345 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=672, family=23, type=1, proto=6, laddr=('::1', 52909, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:49:43,345 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA0F50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:49:43,396 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,397 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,397 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA0F50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,397 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:49:43,402 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: agent_status, cola: server_status_queue
+2025-05-15 17:49:43,402 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: status.*
+2025-05-15 17:49:43,403 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 17:49:43,404 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=592, family=23, type=1, proto=6, laddr=('::1', 52912, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 17:49:43,404 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA20D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 17:49:43,456 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,456 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,457 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B04ADA20D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 17:49:43,457 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 17:49:43,459 [INFO] communication.rabbitmq.publisher: Conectado a RabbitMQ en localhost:5672, exchange: night_tasks
+2025-05-15 17:49:43,461 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_alerts_queue
+2025-05-15 17:49:43,463 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_status_queue
+2025-05-15 17:49:43,463 [INFO] server.central_server: Servidor central en funcionamiento
+2025-05-15 17:49:44,962 [INFO] simulation: Iniciando 3 agentes nocturnos...
+2025-05-15 17:49:44,979 [INFO] simulation: Iniciando 5 espías...
+2025-05-15 17:49:45,009 [INFO] simulation: Simulación en ejecución. Presione Ctrl+C para terminar.
+2025-05-15 17:49:45,501 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.793527°N, 73.965360°W
+2025-05-15 17:49:45,501 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.773307°N, 74.017287°W
+2025-05-15 17:49:45,502 [INFO] spy.SPY005: Espía SPY005 inicializado en posición 40.740622°N, 73.951041°W
+2025-05-15 17:49:45,502 [INFO] spy.SPY004: Espía SPY004 inicializado en posición 40.781854°N, 74.043994°W
+2025-05-15 17:49:45,501 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 17:49:45,502 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
+2025-05-15 17:49:45,501 [ERROR] spy.SPY001: Error en el espía SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 48, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        routing_key="alerts"
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,505 [INFO] spy.SPY001: Espía SPY001 finalizado
+2025-05-15 17:49:45,503 [INFO] spy.SPY002: Espía SPY002 inicializado en posición 40.764309°N, 74.037409°W
+2025-05-15 17:49:45,503 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.707947°N, 74.039695°W
+2025-05-15 17:49:45,503 [INFO] spy.SPY003: Espía SPY003 inicializado en posición 40.745751°N, 73.952621°W
+2025-05-15 17:49:45,502 [ERROR] spy.SPY004: Error en el espía SPY004: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 48, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        routing_key="alerts"
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,506 [INFO] spy.SPY005: Espía SPY005 finalizado
+2025-05-15 17:49:45,506 [INFO] spy.SPY004: Espía SPY004 finalizado
+2025-05-15 17:49:45,506 [ERROR] spy.SPY003: Error en el espía SPY003: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 48, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        routing_key="alerts"
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,506 [ERROR] spy.SPY002: Error en el espía SPY002: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 48, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        routing_key="alerts"
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,506 [ERROR] night_agent.AGENT003: Error en el agente AGENT003: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 17:49:45,507 [INFO] spy.SPY003: Espía SPY003 finalizado
+2025-05-15 17:49:45,508 [INFO] spy.SPY002: Espía SPY002 finalizado
+2025-05-15 17:49:45,508 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 17:49:45,508 [INFO] night_agent.AGENT003: Agente AGENT003 finalizado

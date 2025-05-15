@@ -1,0 +1,18 @@
+2025-05-15 17:49:45,501 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.773307°N, 74.017287°W
+2025-05-15 17:49:45,501 [ERROR] spy.SPY001: Error en el espía SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 48, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        routing_key="alerts"
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,505 [INFO] spy.SPY001: Espía SPY001 finalizado

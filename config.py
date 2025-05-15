@@ -12,7 +12,7 @@ LOGS_DIR = os.path.join(BASE_DIR, "logs")
 
 # ===== SISTEMA =====
 # Modo de comunicación: "sockets" o "rabbitmq"
-COMMUNICATION_MODE = "sockets"
+COMMUNICATION_MODE = "rabbitmq"
 
 # ===== SERVIDORES =====
 # Configuración para servidor socket

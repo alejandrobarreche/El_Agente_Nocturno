@@ -1,0 +1,19 @@
+2025-05-15 17:47:24,806 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.730033°N, 74.045162°W
+2025-05-15 17:49:45,503 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.707947°N, 74.039695°W
+2025-05-15 17:49:45,506 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 17:49:45,508 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
