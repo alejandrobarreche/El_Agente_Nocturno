@@ -120,6 +120,9 @@ class Spy:
         try:
             # Generar datos de emergencia
             level, emerg_type = generate_emergency()
+        except Exception as e:
+            self.logger.exception(f"Error al generar datos de emergencia: {e}")
+            return
 
         # Crear mensaje
         message = AlertMessage(

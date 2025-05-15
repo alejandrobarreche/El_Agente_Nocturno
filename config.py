@@ -30,8 +30,8 @@ RABBITMQ_QUEUE_TASKS = "tasks_queue"
 
 # ===== AGENTES =====
 # Número de agentes a simular
-NUM_SPIES = 5
-NUM_NIGHT_AGENTS = 3
+NUM_SPIES = 20
+NUM_NIGHT_AGENTS = 10
 
 # Tiempos (segundos)
 MIN_ALERT_INTERVAL = 5

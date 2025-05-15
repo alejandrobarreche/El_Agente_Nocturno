@@ -178,3 +178,61 @@ AttributeError: 'RabbitMQPublisher' object has no attribute 'credentials'
 2025-05-15 19:10:10,172 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
 2025-05-15 19:16:12,873 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posiciï¿½n 40.714107ï¿½N, 73.993324ï¿½W
 2025-05-15 19:16:13,009 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 19:45:38,743 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.721625°N, 74.011873°W
+2025-05-15 19:45:38,882 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 19:56:11,173 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.771551°N, 73.957555°W
+2025-05-15 19:56:11,328 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 20:08:36,507 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.709751°N, 74.046853°W
+2025-05-15 20:08:36,668 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 20:25:27,358 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.762278°N, 73.965295°W
+2025-05-15 20:25:27,429 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 78, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task  # Pasar el callback al constructor
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+2025-05-15 20:25:27,433 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 280, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 78, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task  # Pasar el callback al constructor
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+2025-05-15 20:25:27,434 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 20:25:27,441 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-15 20:25:27,441 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 20:28:44,722 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.772265°N, 73.959842°W
+2025-05-15 20:28:44,802 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 20:38:23,107 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.705030°N, 73.981991°W
+2025-05-15 20:38:28,277 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 20:51:39,616 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.761211°N, 74.040841°W
+2025-05-15 20:51:39,852 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:00:54,011 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.754984°N, 74.019786°W
+2025-05-15 21:01:03,649 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.746768°N, 74.010423°W
+2025-05-15 21:01:03,793 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:06:28,234 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.780180°N, 74.027159°W
+2025-05-15 21:06:28,488 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:14:17,179 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.725710°N, 73.976879°W
+2025-05-15 21:14:17,277 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:29:39,217 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.735850°N, 73.993608°W
+2025-05-15 21:29:39,473 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:35:02,012 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.700556°N, 74.031638°W
+2025-05-15 21:35:02,266 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:39:40,508 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.734364°N, 73.997981°W
+2025-05-15 21:39:40,761 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq

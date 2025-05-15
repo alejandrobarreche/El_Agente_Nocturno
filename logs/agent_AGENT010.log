@@ -1,0 +1,17 @@
+2025-05-15 20:38:23,101 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.747863°N, 74.003941°W
+2025-05-15 20:38:28,295 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 20:51:40,276 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.732451°N, 74.028047°W
+2025-05-15 20:51:40,384 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 21:00:54,481 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.722646°N, 73.964814°W
+2025-05-15 21:01:03,661 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.731791°N, 74.027237°W
+2025-05-15 21:01:03,852 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 21:06:28,388 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.762668°N, 73.976009°W
+2025-05-15 21:06:28,538 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 21:14:17,291 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.731033°N, 73.993505°W
+2025-05-15 21:14:17,561 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 21:29:39,329 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.740052°N, 74.032467°W
+2025-05-15 21:29:39,505 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 21:35:03,048 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.752473°N, 73.959310°W
+2025-05-15 21:35:03,130 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq
+2025-05-15 21:39:40,791 [INFO] night_agent.AGENT010: Agente AGENT010 inicializado en posición 40.780108°N, 73.961992°W
+2025-05-15 21:39:40,903 [INFO] night_agent.AGENT010: Conectado al servidor usando rabbitmq

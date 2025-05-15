@@ -64,30 +64,38 @@ class NightAgent:
 
     def connect(self):
         """Establece conexión con el servidor según el modo configurado"""
-        if config.COMMUNICATION_MODE == "sockets":
-            self.comm_client = CommunicationClient(
-                config.SOCKET_HOST,
-                config.SOCKET_PORT,
-                message_handler=self.handle_task
-            )
-        else:
-            self.comm_client = CommunicationClient(
-                host=config.RABBITMQ_HOST,
-                port=config.RABBITMQ_PORT,
-                username=config.RABBITMQ_USER,
-                password=config.RABBITMQ_PASSWORD,
-                queue_name=config.RABBITMQ_QUEUE_TASKS
-            )
-            self.publisher = RabbitMQPublisher(
-                host=config.RABBITMQ_HOST,
-                port=config.RABBITMQ_PORT,
-                exchange='agent_status',
-                exchange_type='topic',
-                username=config.RABBITMQ_USER,
-                password=config.RABBITMQ_PASSWORD
-            )
-        self.publisher.connect()
-        self.comm_client.start_consuming(callback=self.handle_task)
+        try:
+            # Inicializar el publisher para RabbitMQ (se usará con ambos modos)
+            if config.COMMUNICATION_MODE == "rabbitmq":
+                self.publisher = RabbitMQPublisher(
+                    host=config.RABBITMQ_HOST,
+                    port=config.RABBITMQ_PORT,
+                    exchange='agent_status',
+                    exchange_type='topic',
+                    username=config.RABBITMQ_USER,
+                    password=config.RABBITMQ_PASSWORD
+                )
+                self.publisher.connect()
+
+                # Inicializar el consumidor de RabbitMQ
+                self.comm_client = CommunicationClient(
+                    host=config.RABBITMQ_HOST,
+                    port=config.RABBITMQ_PORT,
+                    username=config.RABBITMQ_USER,
+                    password=config.RABBITMQ_PASSWORD,
+                    exchange='night_tasks',
+                    exchange_type='direct',
+                    queue_name=f"queue_{self.agent_id}",      # Cada agente escucha su propia cola
+                    binding_keys=[self.agent_id]              # Solo escucha mensajes dirigidos a él
+                )
+            else:  # Socket mode
+                self.comm_client = CommunicationClient(
+                    host=config.SOCKET_HOST,
+                    port=config.SOCKET_PORT,
+                    message_handler=self.handle_task  # Pasar el manejador al constructor
+                )
+                # Para sockets, usamos el mismo cliente para enviar actualizaciones de estado
+                self.publisher = self.comm_client
 
             self.logger.info(f"Conectado al servidor usando {config.COMMUNICATION_MODE}")
         except Exception as e:
@@ -99,6 +107,10 @@ class NightAgent:
         if self.comm_client:
             self.comm_client.close()
             self.logger.info("Desconectado del servidor")
+
+        if self.publisher and self.publisher != self.comm_client:
+            self.publisher.close()
+            self.logger.info("Cerrada conexión del publisher")
 
     def send_status_update(self, is_busy):
         """
@@ -115,14 +127,25 @@ class NightAgent:
             status=status
         )
 
-        # Enviar actualización de estado
-        if config.COMMUNICATION_MODE == "sockets":
-            self.comm_client.send_message(message.to_json())
-        elif self.publisher:
-            self.publisher.publish_message(message, routing_key=f"status.{self.agent_id}")
+        # Enviar actualización de estado según el modo de comunicación
+        try:
+            if config.COMMUNICATION_MODE == "sockets":
+                if hasattr(self.publisher, 'send_message'):
+                    self.publisher.send_message(message.to_json())
+                else:
+                    self.logger.error("Cliente socket no tiene método send_message")
+            else:  # rabbitmq
+                if self.publisher:
+                    self.publisher.publish_message(
+                        message.to_json(),
+                        routing_key=f"status.{self.agent_id}"
+                    )
+                else:
+                    self.logger.error("Publisher de RabbitMQ no inicializado")
+
             self.logger.debug(f"Estado actualizado a {status}")
-        else:
-            self.logger.warning("Cliente de comunicación no tiene método send_message")
+        except Exception as e:
+            self.logger.exception(f"Error al enviar actualización de estado: {e}")
 
     def handle_task(self, task_json):
         """
@@ -130,10 +153,14 @@ class NightAgent:
 
         Args:
             task_json (str): Mensaje JSON con la tarea a realizar
+
+        Returns:
+            bool: True si la tarea fue aceptada, False si no
         """
         # Solo procesar si no está ocupado
         if self.busy:
             self.logger.warning("Tarea recibida pero el agente está ocupado")
+            self.requeue_task(task_json)  # Reenviar tarea al servidor
             return False
 
         try:
@@ -155,6 +182,9 @@ class NightAgent:
             # Marcar como ocupado
             self.busy = True
             self.send_status_update(True)
+
+            self.logger.info(f"Tarea recibida: {task.emergency_level} - {task.emergency_type} "
+                             f"desde {format_position(task.position)} (alerta #{task.alert_id})")
 
             # Iniciar la tarea en un hilo separado
             self.task_thread = threading.Thread(
@@ -179,11 +209,22 @@ class NightAgent:
             task_json (str): Mensaje JSON con la tarea a reenviar
         """
         try:
-            if hasattr(self.comm_client, 'send_message'):
-                self.comm_client.send_message(task_json)
-                self.logger.info("Tarea reenviada al servidor para análisis posterior")
-            else:
-                self.logger.error("No se pudo reenviar la tarea: el cliente de comunicación no soporta 'send_message'")
+            if config.COMMUNICATION_MODE == "sockets":
+                if hasattr(self.comm_client, 'send_message'):
+                    self.comm_client.send_message(task_json)
+                    self.logger.info("Tarea reenviada al servidor para análisis posterior")
+                else:
+                    self.logger.error("No se pudo reenviar la tarea: el cliente de comunicación no soporta 'send_message'")
+            else:  # rabbitmq
+                if self.publisher:
+                    # Reenviar a una cola específica para tareas no procesadas
+                    self.publisher.publish_message(
+                        task_json,
+                        routing_key="tasks.unprocessed"
+                    )
+                    self.logger.info("Tarea reenviada a la cola de tareas no procesadas")
+                else:
+                    self.logger.error("No se pudo reenviar la tarea: publisher no inicializado")
         except Exception as e:
             self.logger.exception(f"Error al reenviar la tarea al servidor: {e}")
 
@@ -211,10 +252,7 @@ class NightAgent:
             self.logger.info(f"Llegó a la ubicación. Atendiendo emergencia...")
 
             # Simular atención del incidente
-            task_duration = max(0, get_random_sleep_time(
-                config.MIN_TASK_DURATION,
-                config.MAX_TASK_DURATION
-            ))
+            task_duration = max(0, get_random_sleep_time(config.MIN_TASK_DURATION, config.MAX_TASK_DURATION))
 
             if emergency_level == "CRÍTICA":
                 task_duration *= 1.5
@@ -240,7 +278,17 @@ class NightAgent:
         Método principal para iniciar el agente.
         """
         try:
+            # Validar configuraciones antes de iniciar
+            validate_config()
+
+            # Establecer conexiones
             self.connect()
+
+            # Iniciar consumo de mensajes según el modo de comunicación
+            if config.COMMUNICATION_MODE == "rabbitmq":
+                # Para RabbitMQ, iniciar consumo explícitamente y pasar el callback
+                self.comm_client.start_consuming(callback=self.handle_task)
+            # Para sockets, el consumo ya se inicia automáticamente en el constructor
 
             # Enviar estado inicial
             self.send_status_update(False)

@@ -105,30 +105,27 @@ class RabbitMQConsumer:
             logger.error(f"Error al conectar con RabbitMQ: {e}")
             return False
 
-    def _message_handler(self, channel, method, properties, body):
+    def _message_handler(self, channel: pika.adapters.blocking_connection.BlockingChannel,
+                         method: pika.spec.Basic.Deliver,
+                         properties: pika.spec.BasicProperties,
+                         body: bytes):
         """
-        Manejador interno de mensajes recibidos.
-
-        Args:
-            channel: El canal de RabbitMQ.
-            method: Información del método de entrega.
-            properties: Propiedades del mensaje.
-            body: El cuerpo del mensaje.
+        Maneja los mensajes recibidos desde RabbitMQ.
         """
         try:
-            # Deserializar el mensaje
-            message = pickle.loads(body)
+            from common.message import create_message_from_json
+            json_str = body.decode("utf-8")  # ← aseguramos decodificación como texto
+            message = create_message_from_json(json_str)
 
-            # Si hay una función de callback registrada, llamarla con el mensaje
+            logger.debug(f"Mensaje recibido: {message}, Routing Key: {method.routing_key}")
+
             if self._callback_func:
                 self._callback_func(message, method.routing_key)
 
-            # Confirmar el procesamiento del mensaje
             channel.basic_ack(delivery_tag=method.delivery_tag)
 
         except Exception as e:
             logger.error(f"Error al procesar mensaje: {e}")
-            # En caso de error, no confirmar el mensaje para que se reintente
             channel.basic_nack(delivery_tag=method.delivery_tag, requeue=True)
 
     def start_consuming(self, callback: Callable[[Message, str], None]) -> bool:
