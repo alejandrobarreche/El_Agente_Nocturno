@@ -42,7 +42,6 @@ def start_visualization():
     return None
 
 def launch_server():
-    from server.central_server import CentralServer
     server = CentralServer()
     server.start()
 

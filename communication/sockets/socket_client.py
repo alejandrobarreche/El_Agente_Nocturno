@@ -18,18 +18,11 @@ logger = logging.getLogger(__name__)
 class SocketClient:
     """Cliente de sockets para la comunicación con el servidor central."""
 
-    def __init__(self, host: str = 'localhost', port: int = 5000, buffer_size: int = 4096):
-        """
-        Inicializa un nuevo cliente de sockets.
-
-        Args:
-            host: La dirección IP o nombre de host del servidor.
-            port: El puerto del servidor.
-            buffer_size: El tamaño del buffer para recibir datos.
-        """
+    def __init__(self, host='localhost', port=5000, buffer_size=4096, message_handler=None):
         self.host = host
         self.port = port
         self.buffer_size = buffer_size
+        self.message_handler = message_handler
         self.client_socket = None
 
     def connect(self) -> bool:

@@ -9,7 +9,7 @@ import logging
 from threading import Thread, Event
 
 import config
-from common.message import Message
+from common.message import Message, AlertMessage
 from common.utils import generate_emergency, get_random_sleep_time, safe_sleep, setup_logger
 from common.geo import generate_random_position, format_position
 
@@ -53,7 +53,10 @@ class Spy:
                 exchange=config.RABBITMQ_EXCHANGE,
                 routing_key="alerts"
             )
-
+            connected = self.comm_client.connect()
+            if not connected:
+                self.logger.error("No se pudo establecer conexión con RabbitMQ")
+                raise RuntimeError("Fallo en la conexión con RabbitMQ")
         self.logger.info(f"Conectado al servidor usando {config.COMMUNICATION_MODE}")
 
     def disconnect(self):
@@ -85,9 +88,8 @@ class Spy:
         level, emerg_type = generate_emergency()
 
         # Crear mensaje
-        message = Message(
+        message = AlertMessage(
             sender_id=self.spy_id,
-            message_type="ALERT",
             position=self.position,
             emergency_level=level,
             emergency_type=emerg_type
@@ -95,7 +97,7 @@ class Spy:
 
         # Enviar alerta
         self.logger.info(f"Enviando alerta: {level} - {emerg_type} desde {format_position(self.position)}")
-        self.comm_client.send_message(message.to_json())
+        self.comm_client.publish_message(message, routing_key="alert.vigilancia")
 
     def alert_loop(self):
         """
@@ -135,6 +137,16 @@ class Spy:
         finally:
             self.disconnect()
             self.logger.info(f"Espía {self.spy_id} finalizado")
+
+    def send_message(self, message: str):
+        """Publica un mensaje en el intercambio configurado."""
+        if not self.channel:
+            raise RuntimeError("No hay conexión activa con RabbitMQ")
+        self.channel.basic_publish(
+            exchange=self.exchange,
+            routing_key=self.routing_key,
+            body=message
+        )
 
     def stop(self):
         """

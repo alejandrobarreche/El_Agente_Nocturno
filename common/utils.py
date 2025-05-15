@@ -58,8 +58,14 @@ def generate_emergency():
     Returns:
         tuple: (nivel, tipo) de emergencia
     """
-    level = random.choice(list(EmergencyLevel.keys()))
-    emerg_type = random.choice(EmergencyType)
+    level = random.choice([
+        value for name, value in vars(EmergencyLevel).items()
+        if not name.startswith('__') and not callable(value)
+    ])
+    emerg_type = random.choice([
+        value for name, value in vars(EmergencyType).items()
+        if not name.startswith('__') and not callable(value)
+    ])
     return level, emerg_type
 
 def get_timestamp():

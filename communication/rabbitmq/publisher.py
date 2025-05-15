@@ -21,32 +21,20 @@ class RabbitMQPublisher:
 
     def __init__(self, host: str = 'localhost', port: int = 5672,
                  exchange: str = 'spy_alerts', exchange_type: str = 'topic',
-                 username: str = 'guest', password: str = 'guest',
+                 routing_key: str = '', username: str = 'guest', password: str = 'guest',
                  virtual_host: str = '/', connection_attempts: int = 3,
                  retry_delay: int = 5):
-        """
-        Inicializa un nuevo publicador de RabbitMQ.
-
-        Args:
-            host: La dirección IP o nombre de host del servidor RabbitMQ.
-            port: El puerto del servidor RabbitMQ.
-            exchange: El nombre del exchange a utilizar.
-            exchange_type: El tipo de exchange (topic, direct, fanout, etc.).
-            username: Nombre de usuario para la autenticación.
-            password: Contraseña para la autenticación.
-            virtual_host: Host virtual de RabbitMQ.
-            connection_attempts: Número de intentos de conexión.
-            retry_delay: Tiempo de espera entre intentos de conexión (segundos).
-        """
         self.host = host
         self.port = port
         self.exchange = exchange
         self.exchange_type = exchange_type
-        self.credentials = pika.PlainCredentials(username, password)
+        self.routing_key = routing_key
+        self.username = username
+        self.password = password
         self.virtual_host = virtual_host
         self.connection_attempts = connection_attempts
         self.retry_delay = retry_delay
-
+        # Configuración adicional para conexión
         self.connection = None
         self.channel = None
 
@@ -63,7 +51,7 @@ class RabbitMQPublisher:
                 host=self.host,
                 port=self.port,
                 virtual_host=self.virtual_host,
-                credentials=self.credentials,
+                #credentials=self.credentials,
                 connection_attempts=self.connection_attempts,
                 retry_delay=self.retry_delay
             )

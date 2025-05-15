@@ -194,7 +194,7 @@ class CentralServer:
         try:
             agent_id = message.agent_id
             status = message.status
-            location = (message.latitude, message.longitude)
+            location = message.position
 
             with self.night_agents_lock:
                 if agent_id not in self.night_agents:

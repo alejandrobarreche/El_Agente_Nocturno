@@ -9,10 +9,10 @@ import threading
 import random
 
 import config
-from common.message import Message
+from common.message import Message, StatusMessage
 from common.utils import safe_sleep, get_random_sleep_time, setup_logger
 from common.geo import format_position, generate_random_position
-
+from communication.rabbitmq.publisher import RabbitMQPublisher
 # Determinar el tipo de comunicación según configuración
 if config.COMMUNICATION_MODE == "sockets":
     from communication.sockets.socket_client import SocketClient as CommunicationClient
@@ -39,6 +39,7 @@ class NightAgent:
         self.stop_event = threading.Event()
         self.comm_client = None
         self.task_thread = None
+        self.publisher = None
 
         self.logger.info(f"Agente {agent_id} inicializado en posición {format_position(self.position)}")
 
@@ -50,15 +51,24 @@ class NightAgent:
                 config.SOCKET_PORT,
                 message_handler=self.handle_task
             )
-        else:  # "rabbitmq"
+        else:
             self.comm_client = CommunicationClient(
                 host=config.RABBITMQ_HOST,
                 port=config.RABBITMQ_PORT,
                 username=config.RABBITMQ_USER,
                 password=config.RABBITMQ_PASSWORD,
-                queue=config.RABBITMQ_QUEUE_TASKS,
-                callback=self.handle_task
+                queue_name=config.RABBITMQ_QUEUE_TASKS
             )
+            self.publisher = RabbitMQPublisher(
+                host=config.RABBITMQ_HOST,
+                port=config.RABBITMQ_PORT,
+                exchange='agent_status',
+                exchange_type='topic',
+                username=config.RABBITMQ_USER,
+                password=config.RABBITMQ_PASSWORD
+            )
+        self.publisher.connect()
+        self.comm_client.start_consuming(callback=self.handle_task)
 
         self.logger.info(f"Conectado al servidor usando {config.COMMUNICATION_MODE}")
 
@@ -77,16 +87,17 @@ class NightAgent:
         """
         status = "BUSY" if is_busy else "AVAILABLE"
 
-        message = Message(
+        message = StatusMessage(
             sender_id=self.agent_id,
-            message_type="STATUS",
             position=self.position,
             status=status
         )
 
         # Enviar actualización de estado
-        if hasattr(self.comm_client, 'send_message'):
+        if config.COMMUNICATION_MODE == "sockets":
             self.comm_client.send_message(message.to_json())
+        elif self.publisher:
+            self.publisher.publish_message(message, routing_key=f"status.{self.agent_id}")
             self.logger.debug(f"Estado actualizado a {status}")
         else:
             self.logger.warning("Cliente de comunicación no tiene método send_message")

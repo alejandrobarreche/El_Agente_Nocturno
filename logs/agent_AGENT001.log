@@ -17,3 +17,164 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 2025-05-15 17:49:45,508 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:16:11,932 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.735544°N, 73.994750°W
+2025-05-15 18:16:11,933 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 18:16:11,949 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:20:55,373 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.785915°N, 74.039459°W
+2025-05-15 18:20:55,373 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 18:20:55,375 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:21:36,550 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.703691°N, 74.023674°W
+2025-05-15 18:21:36,551 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 18:21:36,552 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:25:33,679 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.759132°N, 73.982170°W
+2025-05-15 18:25:33,679 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+2025-05-15 18:25:33,681 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:27:30,373 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.723972°N, 73.962047°W
+2025-05-15 18:27:30,373 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 54, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
+2025-05-15 18:27:30,375 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:35:15,497 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.731248°N, 74.035541°W
+2025-05-15 18:35:15,616 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 18:35:15,616 [WARNING] night_agent.AGENT001: Cliente de comunicación no tiene método send_message
+2025-05-15 18:41:03,000 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.771053°N, 73.986245°W
+2025-05-15 18:41:03,001 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: name 'RabbitMQPublisher' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 196, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 62, in connect
+    self.publisher = RabbitMQPublisher(
+                     ^^^^^^^^^^^^^^^^^
+NameError: name 'RabbitMQPublisher' is not defined
+2025-05-15 18:41:03,005 [INFO] night_agent.AGENT001: Desconectado del servidor
+2025-05-15 18:41:03,005 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:44:30,805 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.703770°N, 74.027494°W
+2025-05-15 18:44:30,885 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: (406, "PRECONDITION_FAILED - inequivalent arg 'durable' for exchange 'agent_status' in vhost '/': received 'false' but current is 'true'")
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 196, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 62, in connect
+    self.publisher = RabbitMQPublisher(
+                     ~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        password=config.RABBITMQ_PASSWORD
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 40, in __init__
+    self._connect()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 56, in _connect
+    self.channel.exchange_declare(exchange=self.exchange, exchange_type=self.exchange_type)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 2405, in exchange_declare
+    self._flush_output(declare_ok_result.is_ready)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\.venv\Lib\site-packages\pika\adapters\blocking_connection.py", line 1357, in _flush_output
+    raise self._closing_reason  # pylint: disable=E0702
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+pika.exceptions.ChannelClosedByBroker: (406, "PRECONDITION_FAILED - inequivalent arg 'durable' for exchange 'agent_status' in vhost '/': received 'false' but current is 'true'")
+2025-05-15 18:44:30,892 [INFO] night_agent.AGENT001: Desconectado del servidor
+2025-05-15 18:44:30,892 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:51:46,366 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.750304°N, 73.968822°W
+2025-05-15 18:51:46,370 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: 'RabbitMQPublisher' object has no attribute 'credentials'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 196, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 70, in connect
+    self.publisher.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 54, in connect
+    credentials=self.credentials,
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'RabbitMQPublisher' object has no attribute 'credentials'
+2025-05-15 18:51:46,385 [INFO] night_agent.AGENT001: Desconectado del servidor
+2025-05-15 18:51:46,401 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 18:54:59,939 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.734709°N, 74.034326°W
+2025-05-15 18:55:00,074 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 18:57:56,147 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.708446°N, 74.007543°W
+2025-05-15 18:57:56,275 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 19:00:36,050 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.737424°N, 74.031798°W
+2025-05-15 19:00:36,194 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 19:10:10,038 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.760479°N, 73.989651°W
+2025-05-15 19:10:10,172 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 19:16:12,873 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.714107°N, 73.993324°W
+2025-05-15 19:16:13,009 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq

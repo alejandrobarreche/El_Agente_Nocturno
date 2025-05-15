@@ -22,38 +22,25 @@ class RabbitMQConsumer:
 
     def __init__(self, host: str = 'localhost', port: int = 5672,
                  exchange: str = 'spy_alerts', exchange_type: str = 'topic',
-                 queue_name: str = '', binding_keys: List[str] = None,
+                 queue_name: str = '', queue: str = '', binding_keys: List[str] = None,
                  username: str = 'guest', password: str = 'guest',
                  virtual_host: str = '/', connection_attempts: int = 3,
                  retry_delay: int = 5, auto_reconnect: bool = True):
-        """
-        Inicializa un nuevo consumidor de RabbitMQ.
-
-        Args:
-            host: La dirección IP o nombre de host del servidor RabbitMQ.
-            port: El puerto del servidor RabbitMQ.
-            exchange: El nombre del exchange a utilizar.
-            exchange_type: El tipo de exchange (topic, direct, fanout, etc.).
-            queue_name: El nombre de la cola (vacío para cola anónima).
-            binding_keys: Lista de claves de enrutamiento para suscribirse.
-            username: Nombre de usuario para la autenticación.
-            password: Contraseña para la autenticación.
-            virtual_host: Host virtual de RabbitMQ.
-            connection_attempts: Número de intentos de conexión.
-            retry_delay: Tiempo de espera entre intentos de conexión (segundos).
-            auto_reconnect: Si se debe intentar reconectar automáticamente.
-        """
         self.host = host
         self.port = port
         self.exchange = exchange
         self.exchange_type = exchange_type
         self.queue_name = queue_name
-        self.binding_keys = binding_keys or ['#']  # Por defecto, escuchar todos los mensajes
+        self.queue = queue
+        self.binding_keys = binding_keys or ['#']
+        self.username = username
+        self.password = password
         self.credentials = pika.PlainCredentials(username, password)
         self.virtual_host = virtual_host
         self.connection_attempts = connection_attempts
         self.retry_delay = retry_delay
         self.auto_reconnect = auto_reconnect
+        # Configuración adicional...
 
         self.connection = None
         self.channel = None
@@ -88,7 +75,7 @@ class RabbitMQConsumer:
             self.channel.exchange_declare(
                 exchange=self.exchange,
                 exchange_type=self.exchange_type,
-                durable=True  # Persistente para mantener los mensajes si RabbitMQ se reinicia
+                durable=True  # Asegurar que el intercambio sea persistente
             )
 
             # Declarar la cola (si no se especifica nombre, se crea una cola anónima)
