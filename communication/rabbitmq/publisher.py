@@ -37,6 +37,7 @@ class RabbitMQPublisher:
         # Configuración adicional para conexión
         self.connection = None
         self.channel = None
+        self.failed_messages = []  # Cola local para mensajes no publicados
 
     def connect(self) -> bool:
         """
@@ -74,6 +75,24 @@ class RabbitMQPublisher:
             logger.error(f"Error al conectar con RabbitMQ: {e}")
             return False
 
+    def _reconnect(self) -> bool:
+        """
+        Intenta reconectar con RabbitMQ.
+
+        Returns:
+            bool: True si la reconexión fue exitosa, False en caso contrario.
+        """
+        logger.warning("Intentando reconectar con RabbitMQ...")
+        self.close()
+        for attempt in range(self.connection_attempts):
+            if self.connect():
+                logger.info("Reconexión exitosa con RabbitMQ")
+                return True
+            logger.warning(f"Reintento {attempt + 1}/{self.connection_attempts} fallido. Esperando...")
+            time.sleep(self.retry_delay)
+        logger.error("No se pudo reconectar con RabbitMQ después de varios intentos")
+        return False
+
     def publish_message(self, message: Message, routing_key: str = '') -> bool:
         """
         Publica un mensaje en el exchange.
@@ -86,8 +105,11 @@ class RabbitMQPublisher:
             bool: True si el mensaje fue publicado exitosamente, False en caso contrario.
         """
         if not self.connection or not self.channel:
-            logger.error("No hay conexión establecida con RabbitMQ")
-            return False
+            logger.error("No hay conexión establecida con RabbitMQ. Intentando reconectar...")
+            if not self._reconnect():
+                self.failed_messages.append((message, routing_key))
+                logger.error("Mensaje almacenado en la cola local para reintento")
+                return False
 
         try:
             # Si no hay routing_key específica, usar el tipo de mensaje como routing_key
@@ -117,7 +139,22 @@ class RabbitMQPublisher:
 
         except (pika.exceptions.AMQPError, pickle.PickleError) as e:
             logger.error(f"Error al publicar mensaje: {e}")
+            self.failed_messages.append((message, routing_key))
+            logger.error("Mensaje almacenado en la cola local para reintento")
             return False
+
+    def resend_failed_messages(self) -> None:
+        """
+        Reintenta publicar los mensajes almacenados en la cola local.
+        """
+        if not self.failed_messages:
+            return
+
+        logger.info(f"Reintentando publicar {len(self.failed_messages)} mensajes fallidos...")
+        for message, routing_key in list(self.failed_messages):
+            if self.publish_message(message, routing_key):
+                self.failed_messages.remove((message, routing_key))
+                logger.info(f"Mensaje reenviado exitosamente: {message}")
 
     def close(self) -> None:
         """Cierra la conexión con RabbitMQ."""

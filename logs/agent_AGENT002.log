@@ -1,4 +1,4 @@
-2025-05-15 17:49:45,501 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.793527°N, 73.965360°W
+2025-05-15 17:49:45,501 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.793527ï¿½N, 73.965360ï¿½W
 2025-05-15 17:49:45,501 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
@@ -16,7 +16,7 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 2025-05-15 17:49:45,502 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:16:11,934 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.766114°N, 73.958981°W
+2025-05-15 18:16:11,934 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.766114ï¿½N, 73.958981ï¿½W
 2025-05-15 18:16:11,949 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
@@ -34,7 +34,7 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 2025-05-15 18:16:11,951 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:20:55,380 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.783348°N, 73.989328°W
+2025-05-15 18:20:55,380 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.783348ï¿½N, 73.989328ï¿½W
 2025-05-15 18:20:55,381 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
@@ -52,7 +52,7 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 2025-05-15 18:20:55,382 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:21:36,538 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.707393°N, 74.024509°W
+2025-05-15 18:21:36,538 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.707393ï¿½N, 74.024509ï¿½W
 2025-05-15 18:21:36,538 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
@@ -70,7 +70,7 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 2025-05-15 18:21:36,540 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:25:33,676 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.715504°N, 74.000670°W
+2025-05-15 18:25:33,676 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.715504ï¿½N, 74.000670ï¿½W
 2025-05-15 18:25:33,676 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
@@ -88,7 +88,7 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
 2025-05-15 18:25:33,678 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:27:30,372 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.773390°N, 73.952075°W
+2025-05-15 18:27:30,372 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.773390ï¿½N, 73.952075ï¿½W
 2025-05-15 18:27:30,373 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 185, in run
@@ -106,10 +106,10 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callback'
 2025-05-15 18:27:30,374 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:35:15,498 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.778625°N, 73.967667°W
+2025-05-15 18:35:15,498 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.778625ï¿½N, 73.967667ï¿½W
 2025-05-15 18:35:15,616 [INFO] night_agent.AGENT002: Conectado al servidor usando rabbitmq
-2025-05-15 18:35:15,616 [WARNING] night_agent.AGENT002: Cliente de comunicación no tiene método send_message
-2025-05-15 18:41:03,000 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.716695°N, 73.992011°W
+2025-05-15 18:35:15,616 [WARNING] night_agent.AGENT002: Cliente de comunicaciï¿½n no tiene mï¿½todo send_message
+2025-05-15 18:41:03,000 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.716695ï¿½N, 73.992011ï¿½W
 2025-05-15 18:41:03,000 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: name 'RabbitMQPublisher' is not defined
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 196, in run
@@ -121,7 +121,7 @@ Traceback (most recent call last):
 NameError: name 'RabbitMQPublisher' is not defined
 2025-05-15 18:41:03,004 [INFO] night_agent.AGENT002: Desconectado del servidor
 2025-05-15 18:41:03,004 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:44:30,805 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.731858°N, 74.048241°W
+2025-05-15 18:44:30,805 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.731858ï¿½N, 74.048241ï¿½W
 2025-05-15 18:44:30,873 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: (406, "PRECONDITION_FAILED - inequivalent arg 'durable' for exchange 'agent_status' in vhost '/': received 'false' but current is 'true'")
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 196, in run
@@ -152,7 +152,7 @@ Traceback (most recent call last):
 pika.exceptions.ChannelClosedByBroker: (406, "PRECONDITION_FAILED - inequivalent arg 'durable' for exchange 'agent_status' in vhost '/': received 'false' but current is 'true'")
 2025-05-15 18:44:30,876 [INFO] night_agent.AGENT002: Desconectado del servidor
 2025-05-15 18:44:30,880 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:51:46,369 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.723855°N, 74.035530°W
+2025-05-15 18:51:46,369 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.723855ï¿½N, 74.035530ï¿½W
 2025-05-15 18:51:46,370 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: 'RabbitMQPublisher' object has no attribute 'credentials'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 196, in run
@@ -167,13 +167,13 @@ Traceback (most recent call last):
 AttributeError: 'RabbitMQPublisher' object has no attribute 'credentials'
 2025-05-15 18:51:46,400 [INFO] night_agent.AGENT002: Desconectado del servidor
 2025-05-15 18:51:46,401 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
-2025-05-15 18:54:59,942 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.759740°N, 73.971172°W
+2025-05-15 18:54:59,942 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.759740ï¿½N, 73.971172ï¿½W
 2025-05-15 18:55:00,074 [INFO] night_agent.AGENT002: Conectado al servidor usando rabbitmq
-2025-05-15 18:57:56,144 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.741745°N, 74.029278°W
+2025-05-15 18:57:56,144 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.741745ï¿½N, 74.029278ï¿½W
 2025-05-15 18:57:56,275 [INFO] night_agent.AGENT002: Conectado al servidor usando rabbitmq
-2025-05-15 19:00:36,047 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.756860°N, 73.976854°W
+2025-05-15 19:00:36,047 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.756860ï¿½N, 73.976854ï¿½W
 2025-05-15 19:00:36,191 [INFO] night_agent.AGENT002: Conectado al servidor usando rabbitmq
-2025-05-15 19:10:10,019 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.705652°N, 74.006527°W
+2025-05-15 19:10:10,019 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.705652ï¿½N, 74.006527ï¿½W
 2025-05-15 19:10:10,173 [INFO] night_agent.AGENT002: Conectado al servidor usando rabbitmq
-2025-05-15 19:16:12,896 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.789833°N, 73.973601°W
+2025-05-15 19:16:12,896 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posiciï¿½n 40.789833ï¿½N, 73.973601ï¿½W
 2025-05-15 19:16:13,030 [INFO] night_agent.AGENT002: Conectado al servidor usando rabbitmq

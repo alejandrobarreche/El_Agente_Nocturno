@@ -21,7 +21,7 @@ class ClientHandler(threading.Thread):
 
     def __init__(self, client_socket: socket.socket, address: Tuple[str, int],
                  message_callback: Callable[[Message, Tuple[str, int]], None],
-                 buffer_size: int = 4096):
+                 buffer_size: int = 4096, max_message_size: int = 1048576):
         """
         Inicializa un nuevo manejador de cliente.
 
@@ -30,6 +30,7 @@ class ClientHandler(threading.Thread):
             address: La dirección del cliente (ip, puerto).
             message_callback: Función a llamar cuando se recibe un mensaje.
             buffer_size: Tamaño del buffer para recibir datos.
+            max_message_size: Tamaño máximo permitido para los mensajes (en bytes).
         """
         super().__init__()
         self.daemon = True
@@ -37,6 +38,7 @@ class ClientHandler(threading.Thread):
         self.address = address
         self.message_callback = message_callback
         self.buffer_size = buffer_size
+        self.max_message_size = max_message_size
         self.running = True
 
     def run(self) -> None:
@@ -52,6 +54,12 @@ class ClientHandler(threading.Thread):
                     break
 
                 message_size = int.from_bytes(size_bytes, byteorder='big')
+
+                # Verificar si el tamaño del mensaje excede el límite
+                if message_size > self.max_message_size:
+                    logger.error(f"Mensaje de {self.address[0]}:{self.address[1]} excede el tamaño máximo permitido ({message_size} bytes)")
+                    self.close()
+                    return
 
                 # Recibir el mensaje completo
                 chunks = []
@@ -131,7 +139,7 @@ class SocketServer:
 
     def __init__(self, host: str = '0.0.0.0', port: int = 5000,
                  message_callback: Optional[Callable[[Message, Tuple[str, int]], None]] = None,
-                 max_connections: int = 10, buffer_size: int = 4096):
+                 max_connections: int = 10, buffer_size: int = 4096, max_message_size: int = 1048576):
         """
         Inicializa un nuevo servidor de sockets.
 
@@ -141,16 +149,21 @@ class SocketServer:
             message_callback: Función a llamar cuando se recibe un mensaje.
             max_connections: Número máximo de conexiones en espera.
             buffer_size: Tamaño del buffer para recibir datos.
+            max_message_size: Tamaño máximo permitido para los mensajes (en bytes).
         """
         self.host = host
         self.port = port
         self.message_callback = message_callback
         self.max_connections = max_connections
         self.buffer_size = buffer_size
+        self.max_message_size = max_message_size
         self.server_socket = None
         self.clients: Dict[Tuple[str, int], ClientHandler] = {}
         self.running = False
         self.accept_thread = None
+
+        # Métricas
+        self.connected_clients = 0
 
     def start(self) -> bool:
         """
@@ -191,11 +204,14 @@ class SocketServer:
                     client_socket,
                     address,
                     self.message_callback,
-                    self.buffer_size
+                    self.buffer_size,
+                    self.max_message_size
                 )
 
                 # Registrar el cliente
                 self.clients[address] = handler
+                self.connected_clients += 1
+                logger.info(f"Cliente conectado desde {address[0]}:{address[1]}. Total clientes conectados: {self.connected_clients}")
 
                 # Iniciar el hilo del manejador
                 handler.start()
@@ -249,6 +265,7 @@ class SocketServer:
         # Cerrar todas las conexiones con clientes
         for address, handler in list(self.clients.items()):
             handler.close()
+            self.connected_clients -= 1
 
         self.clients.clear()
 
@@ -259,6 +276,17 @@ class SocketServer:
                 logger.info("Servidor detenido")
             except socket.error as e:
                 logger.error(f"Error al cerrar el socket del servidor: {e}")
+
+    def get_metrics(self) -> Dict[str, int]:
+        """
+        Devuelve las métricas del servidor.
+
+        Returns:
+            dict: Diccionario con las métricas del servidor.
+        """
+        return {
+            "connected_clients": self.connected_clients
+        }
 
     def __enter__(self):
         """Permite usar el servidor con el contexto 'with'."""

@@ -19,6 +19,25 @@ if config.COMMUNICATION_MODE == "sockets":
 else:  # "rabbitmq"
     from communication.rabbitmq.consumer import RabbitMQConsumer as CommunicationClient
 
+# Validar configuraciones críticas al inicio del programa
+def validate_config():
+    """Valida que las configuraciones necesarias estén presentes"""
+    required_keys = [
+        "COMMUNICATION_MODE",
+        "SOCKET_HOST",
+        "SOCKET_PORT",
+        "RABBITMQ_HOST",
+        "RABBITMQ_PORT",
+        "RABBITMQ_USER",
+        "RABBITMQ_PASSWORD",
+        "RABBITMQ_QUEUE_TASKS",
+        "MIN_TASK_DURATION",
+        "MAX_TASK_DURATION"
+    ]
+    for key in required_keys:
+        if not hasattr(config, key):
+            raise ValueError(f"Falta la configuración requerida: {key}")
+
 class NightAgent:
     """
     Clase que representa un agente nocturno que atiende alertas.
@@ -70,7 +89,10 @@ class NightAgent:
         self.publisher.connect()
         self.comm_client.start_consuming(callback=self.handle_task)
 
-        self.logger.info(f"Conectado al servidor usando {config.COMMUNICATION_MODE}")
+            self.logger.info(f"Conectado al servidor usando {config.COMMUNICATION_MODE}")
+        except Exception as e:
+            self.logger.exception(f"Error al conectar con el servidor: {e}")
+            raise
 
     def disconnect(self):
         """Cierra la conexión con el servidor"""
@@ -117,8 +139,17 @@ class NightAgent:
         try:
             task = Message.from_json(task_json)
 
+            # Validar que la tarea tenga los campos necesarios
+            required_fields = ["emergency_type", "emergency_level", "position", "alert_id"]
+            missing_fields = [field for field in required_fields if not hasattr(task, field)]
+            if missing_fields:
+                self.logger.error(f"Tarea inválida: faltan los campos {', '.join(missing_fields)}")
+                self.requeue_task(task_json)  # Reenviar tarea al servidor
+                return False
+
             if task.message_type != "TASK":
                 self.logger.warning(f"Mensaje recibido no es una tarea: {task.message_type}")
+                self.requeue_task(task_json)  # Reenviar tarea al servidor
                 return False
 
             # Marcar como ocupado
@@ -137,7 +168,24 @@ class NightAgent:
 
         except Exception as e:
             self.logger.exception(f"Error procesando tarea: {e}")
+            self.requeue_task(task_json)  # Reenviar tarea al servidor
             return False
+
+    def requeue_task(self, task_json):
+        """
+        Reenvía una tarea no procesable al servidor para su análisis posterior.
+
+        Args:
+            task_json (str): Mensaje JSON con la tarea a reenviar
+        """
+        try:
+            if hasattr(self.comm_client, 'send_message'):
+                self.comm_client.send_message(task_json)
+                self.logger.info("Tarea reenviada al servidor para análisis posterior")
+            else:
+                self.logger.error("No se pudo reenviar la tarea: el cliente de comunicación no soporta 'send_message'")
+        except Exception as e:
+            self.logger.exception(f"Error al reenviar la tarea al servidor: {e}")
 
     def process_task(self, task):
         """
@@ -157,18 +205,17 @@ class NightAgent:
 
             # Simular movimiento hacia la ubicación
             self.logger.info(f"Dirigiéndose a la ubicación del incidente...")
-            move_time = get_random_sleep_time(2, 5)
+            move_time = max(0, get_random_sleep_time(2, 5))  # Validar tiempo positivo
             safe_sleep(move_time)
 
             self.logger.info(f"Llegó a la ubicación. Atendiendo emergencia...")
 
             # Simular atención del incidente
-            task_duration = get_random_sleep_time(
+            task_duration = max(0, get_random_sleep_time(
                 config.MIN_TASK_DURATION,
                 config.MAX_TASK_DURATION
-            )
+            ))
 
-            # Si la emergencia es crítica, toma más tiempo
             if emergency_level == "CRÍTICA":
                 task_duration *= 1.5
 
@@ -207,6 +254,7 @@ class NightAgent:
         except Exception as e:
             self.logger.exception(f"Error en el agente {self.agent_id}: {e}")
         finally:
+            self.stop()  # Asegurarse de detener el agente correctamente
             self.disconnect()
             self.logger.info(f"Agente {self.agent_id} finalizado")
 
@@ -217,4 +265,6 @@ class NightAgent:
         self.logger.info(f"Deteniendo agente {self.agent_id}")
         self.stop_event.set()
         if self.task_thread and self.task_thread.is_alive():
-            self.task_thread.join(timeout=1)
+            self.task_thread.join(timeout=5)  # Esperar a que el hilo termine
+            if self.task_thread.is_alive():
+                self.logger.warning("El hilo de la tarea no pudo detenerse correctamente")

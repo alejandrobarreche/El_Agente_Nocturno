@@ -62,9 +62,15 @@ def main():
 
     # Iniciar servidor central
     logger.info("Iniciando servidor central...")
-    server_process = mp.Process(target=launch_server)
-    processes.append(server_process)
-    server_process.start()
+    try:
+        server_process = mp.Process(target=launch_server)
+        server_process.start()
+        if not server_process.is_alive():
+            raise RuntimeError("El proceso del servidor central no se inició correctamente")
+        processes.append(server_process)
+    except Exception as e:
+        logger.error(f"Error al iniciar el servidor central: {e}")
+        return
 
     # Dar tiempo al servidor para iniciar
     time.sleep(2)
@@ -72,33 +78,48 @@ def main():
     # Iniciar agentes nocturnos
     logger.info(f"Iniciando {config.NUM_NIGHT_AGENTS} agentes nocturnos...")
     for i in range(config.NUM_NIGHT_AGENTS):
-        position = generate_random_position()
-        agent_id = f"AGENT{i+1:03d}"
-        agent_process = mp.Process(
-            target=launch_night_agent,
-            args=(agent_id, position)
-        )
-        processes.append(agent_process)
-        agent_process.start()
+        try:
+            position = generate_random_position()
+            agent_id = f"AGENT{i+1:03d}"
+            agent_process = mp.Process(
+                target=launch_night_agent,
+                args=(agent_id, position)
+            )
+            agent_process.start()
+            if not agent_process.is_alive():
+                raise RuntimeError(f"El proceso del agente nocturno {agent_id} no se inició correctamente")
+            processes.append(agent_process)
+        except Exception as e:
+            logger.error(f"Error al iniciar el agente nocturno {i+1}: {e}")
 
     # Iniciar espías
     logger.info(f"Iniciando {config.NUM_SPIES} espías...")
     for i in range(config.NUM_SPIES):
-        position = generate_random_position()
-        spy_id = f"SPY{i+1:03d}"
-        spy_process = mp.Process(
-            target=launch_spy,
-            args=(spy_id, position)
-        )
-        processes.append(spy_process)
-        spy_process.start()
+        try:
+            position = generate_random_position()
+            spy_id = f"SPY{i+1:03d}"
+            spy_process = mp.Process(
+                target=launch_spy,
+                args=(spy_id, position)
+            )
+            spy_process.start()
+            if not spy_process.is_alive():
+                raise RuntimeError(f"El proceso del espía {spy_id} no se inició correctamente")
+            processes.append(spy_process)
+        except Exception as e:
+            logger.error(f"Error al iniciar el espía {i+1}: {e}")
 
     # Iniciar visualización si está habilitada
     vis_process = start_visualization()
     if vis_process:
-        processes.append(vis_process)
-        vis_process.start()
-        logger.info("Visualización iniciada")
+        try:
+            vis_process.start()
+            if not vis_process.is_alive():
+                raise RuntimeError("El proceso de visualización no se inició correctamente")
+            processes.append(vis_process)
+            logger.info("Visualización iniciada")
+        except Exception as e:
+            logger.error(f"Error al iniciar el módulo de visualización: {e}")
 
     # Esperar a que el usuario termine la simulación
     try:

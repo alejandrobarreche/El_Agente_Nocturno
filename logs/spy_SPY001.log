@@ -1,5 +1,5 @@
-2025-05-15 17:49:45,501 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.773307°N, 74.017287°W
-2025-05-15 17:49:45,501 [ERROR] spy.SPY001: Error en el espía SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,501 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.773307ï¿½N, 74.017287ï¿½W
+2025-05-15 17:49:45,501 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.connect()
@@ -15,9 +15,9 @@ Traceback (most recent call last):
     )
     ^
 TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
-2025-05-15 17:49:45,505 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:16:11,932 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.702539°N, 74.004004°W
-2025-05-15 18:16:11,932 [ERROR] spy.SPY001: Error en el espía SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 17:49:45,505 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:16:11,932 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.702539ï¿½N, 74.004004ï¿½W
+2025-05-15 18:16:11,932 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.connect()
@@ -33,9 +33,9 @@ Traceback (most recent call last):
     )
     ^
 TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
-2025-05-15 18:16:11,934 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:20:55,381 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.789937°N, 73.992449°W
-2025-05-15 18:20:55,381 [ERROR] spy.SPY001: Error en el espía SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 18:16:11,934 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:20:55,381 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.789937ï¿½N, 73.992449ï¿½W
+2025-05-15 18:20:55,381 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.connect()
@@ -51,9 +51,9 @@ Traceback (most recent call last):
     )
     ^
 TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
-2025-05-15 18:20:55,384 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:21:36,523 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.730683°N, 73.981823°W
-2025-05-15 18:21:36,523 [ERROR] spy.SPY001: Error en el espía SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
+2025-05-15 18:20:55,384 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:21:36,523 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.730683ï¿½N, 73.981823ï¿½W
+2025-05-15 18:21:36,523 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.connect()
@@ -69,11 +69,11 @@ Traceback (most recent call last):
     )
     ^
 TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
-2025-05-15 18:21:36,525 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:25:33,681 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.736442°N, 73.959786°W
+2025-05-15 18:21:36,525 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:25:33,681 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.736442ï¿½N, 73.959786ï¿½W
 2025-05-15 18:25:33,682 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:25:33,682 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:25:33,682 [ERROR] spy.SPY001: Error en el espía SPY001: type object 'EmergencyLevel' has no attribute 'keys'
+2025-05-15 18:25:33,682 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:25:33,682 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: type object 'EmergencyLevel' has no attribute 'keys'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 130, in run
     self.alert_loop()
@@ -89,11 +89,11 @@ Traceback (most recent call last):
                                ^^^^^^^^^^^^^^^^^^^
 AttributeError: type object 'EmergencyLevel' has no attribute 'keys'
 2025-05-15 18:25:33,684 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:25:33,684 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:27:30,374 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.756835°N, 74.002296°W
+2025-05-15 18:25:33,684 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:27:30,374 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.756835ï¿½N, 74.002296ï¿½W
 2025-05-15 18:27:30,374 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:27:30,374 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:27:30,374 [ERROR] spy.SPY001: Error en el espía SPY001: type object 'EmergencyLevel' has no attribute 'keys'
+2025-05-15 18:27:30,374 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:27:30,374 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: type object 'EmergencyLevel' has no attribute 'keys'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 130, in run
     self.alert_loop()
@@ -109,11 +109,11 @@ Traceback (most recent call last):
                                ^^^^^^^^^^^^^^^^^^^
 AttributeError: type object 'EmergencyLevel' has no attribute 'keys'
 2025-05-15 18:27:30,377 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:27:30,377 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:35:15,498 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.705572°N, 73.993494°W
+2025-05-15 18:27:30,377 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:35:15,498 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.705572ï¿½N, 73.993494ï¿½W
 2025-05-15 18:35:15,499 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:35:15,499 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:35:15,499 [ERROR] spy.SPY001: Error en el espía SPY001: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-15 18:35:15,499 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:35:15,499 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: Message.__init__() got an unexpected keyword argument 'position'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 130, in run
     self.alert_loop()
@@ -129,12 +129,12 @@ Traceback (most recent call last):
     )
 TypeError: Message.__init__() got an unexpected keyword argument 'position'
 2025-05-15 18:35:15,502 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:35:15,502 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:41:03,009 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.753136°N, 73.999110°W
+2025-05-15 18:35:15,502 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:41:03,009 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.753136ï¿½N, 73.999110ï¿½W
 2025-05-15 18:41:03,009 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:41:03,009 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:41:03,009 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - ROBO desde 40.753136°N, 73.999110°W
-2025-05-15 18:41:03,009 [ERROR] spy.SPY001: Error en el espía SPY001: 'RabbitMQPublisher' object has no attribute 'send_message'
+2025-05-15 18:41:03,009 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:41:03,009 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - ROBO desde 40.753136ï¿½N, 73.999110ï¿½W
+2025-05-15 18:41:03,009 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: 'RabbitMQPublisher' object has no attribute 'send_message'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.alert_loop()
@@ -147,20 +147,20 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'RabbitMQPublisher' object has no attribute 'send_message'
 2025-05-15 18:41:03,012 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:41:03,012 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:44:30,805 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.779945°N, 73.970999°W
+2025-05-15 18:41:03,012 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:44:30,805 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.779945ï¿½N, 73.970999ï¿½W
 2025-05-15 18:44:30,884 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:44:30,885 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:44:30,885 [INFO] spy.SPY001: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.779945°N, 73.970999°W
-2025-05-15 18:44:50,357 [INFO] spy.SPY001: Enviando alerta: MEDIA - INTRUSIÓN desde 40.779948°N, 73.971513°W
-2025-05-15 18:45:00,363 [INFO] spy.SPY001: Interrupción de teclado recibida
+2025-05-15 18:44:30,885 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:44:30,885 [INFO] spy.SPY001: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.779945ï¿½N, 73.970999ï¿½W
+2025-05-15 18:44:50,357 [INFO] spy.SPY001: Enviando alerta: MEDIA - INTRUSIï¿½N desde 40.779948ï¿½N, 73.971513ï¿½W
+2025-05-15 18:45:00,363 [INFO] spy.SPY001: Interrupciï¿½n de teclado recibida
 2025-05-15 18:45:00,367 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:45:00,367 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:51:46,367 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.744702°N, 73.955800°W
+2025-05-15 18:45:00,367 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:51:46,367 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.744702ï¿½N, 73.955800ï¿½W
 2025-05-15 18:51:46,370 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:51:46,370 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:51:46,371 [INFO] spy.SPY001: Enviando alerta: MEDIA - INTRUSIÓN desde 40.744702°N, 73.955800°W
-2025-05-15 18:51:46,371 [ERROR] spy.SPY001: Error en el espía SPY001: 'RabbitMQPublisher' object has no attribute 'send_message'
+2025-05-15 18:51:46,370 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:51:46,371 [INFO] spy.SPY001: Enviando alerta: MEDIA - INTRUSIï¿½N desde 40.744702ï¿½N, 73.955800ï¿½W
+2025-05-15 18:51:46,371 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: 'RabbitMQPublisher' object has no attribute 'send_message'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.alert_loop()
@@ -173,12 +173,12 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'RabbitMQPublisher' object has no attribute 'send_message'
 2025-05-15 18:51:46,385 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:51:46,401 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:54:59,943 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.716633°N, 74.006668°W
+2025-05-15 18:51:46,401 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:54:59,943 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.716633ï¿½N, 74.006668ï¿½W
 2025-05-15 18:54:59,944 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:54:59,944 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:54:59,944 [INFO] spy.SPY001: Enviando alerta: MEDIA - VIGILANCIA desde 40.716633°N, 74.006668°W
-2025-05-15 18:54:59,944 [ERROR] spy.SPY001: Error en el espía SPY001: 'RabbitMQPublisher' object has no attribute 'send_message'
+2025-05-15 18:54:59,944 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:54:59,944 [INFO] spy.SPY001: Enviando alerta: MEDIA - VIGILANCIA desde 40.716633ï¿½N, 74.006668ï¿½W
+2025-05-15 18:54:59,944 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: 'RabbitMQPublisher' object has no attribute 'send_message'
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 129, in run
     self.alert_loop()
@@ -191,64 +191,64 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'RabbitMQPublisher' object has no attribute 'send_message'
 2025-05-15 18:54:59,947 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 18:54:59,947 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 18:57:56,146 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.794015°N, 74.037022°W
+2025-05-15 18:54:59,947 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 18:57:56,146 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.794015ï¿½N, 74.037022ï¿½W
 2025-05-15 18:57:56,146 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 18:57:56,146 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 18:57:56,146 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.794015°N, 74.037022°W
-2025-05-15 18:58:08,623 [INFO] spy.SPY001: Enviando alerta: BAJA - SECUESTRO desde 40.793878°N, 74.037868°W
-2025-05-15 18:58:24,698 [INFO] spy.SPY001: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.794681°N, 74.037186°W
-2025-05-15 18:58:38,754 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.795294°N, 74.036810°W
-2025-05-15 18:58:47,637 [INFO] spy.SPY001: Enviando alerta: MEDIA - SECUESTRO desde 40.795466°N, 74.036107°W
-2025-05-15 18:59:01,623 [INFO] spy.SPY001: Enviando alerta: ALTA - ROBO desde 40.796207°N, 74.035209°W
-2025-05-15 18:59:15,384 [INFO] spy.SPY001: Enviando alerta: ALTA - SECUESTRO desde 40.796596°N, 74.034216°W
-2025-05-15 18:59:32,329 [INFO] spy.SPY001: Enviando alerta: BAJA - INTRUSIÓN desde 40.796705°N, 74.033567°W
-2025-05-15 18:59:45,141 [INFO] spy.SPY001: Enviando alerta: BAJA - VIGILANCIA desde 40.796230°N, 74.034257°W
-2025-05-15 19:00:36,048 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.772323°N, 73.992804°W
-2025-05-15 19:00:36,126 [ERROR] spy.SPY001: No se pudo establecer conexión con RabbitMQ
-2025-05-15 19:00:36,126 [ERROR] spy.SPY001: Error en el espía SPY001: Fallo en la conexión con RabbitMQ
+2025-05-15 18:57:56,146 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 18:57:56,146 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - INTRUSIï¿½N desde 40.794015ï¿½N, 74.037022ï¿½W
+2025-05-15 18:58:08,623 [INFO] spy.SPY001: Enviando alerta: BAJA - SECUESTRO desde 40.793878ï¿½N, 74.037868ï¿½W
+2025-05-15 18:58:24,698 [INFO] spy.SPY001: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.794681ï¿½N, 74.037186ï¿½W
+2025-05-15 18:58:38,754 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - AMENAZA_BOMBA desde 40.795294ï¿½N, 74.036810ï¿½W
+2025-05-15 18:58:47,637 [INFO] spy.SPY001: Enviando alerta: MEDIA - SECUESTRO desde 40.795466ï¿½N, 74.036107ï¿½W
+2025-05-15 18:59:01,623 [INFO] spy.SPY001: Enviando alerta: ALTA - ROBO desde 40.796207ï¿½N, 74.035209ï¿½W
+2025-05-15 18:59:15,384 [INFO] spy.SPY001: Enviando alerta: ALTA - SECUESTRO desde 40.796596ï¿½N, 74.034216ï¿½W
+2025-05-15 18:59:32,329 [INFO] spy.SPY001: Enviando alerta: BAJA - INTRUSIï¿½N desde 40.796705ï¿½N, 74.033567ï¿½W
+2025-05-15 18:59:45,141 [INFO] spy.SPY001: Enviando alerta: BAJA - VIGILANCIA desde 40.796230ï¿½N, 74.034257ï¿½W
+2025-05-15 19:00:36,048 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.772323ï¿½N, 73.992804ï¿½W
+2025-05-15 19:00:36,126 [ERROR] spy.SPY001: No se pudo establecer conexiï¿½n con RabbitMQ
+2025-05-15 19:00:36,126 [ERROR] spy.SPY001: Error en el espï¿½a SPY001: Fallo en la conexiï¿½n con RabbitMQ
 Traceback (most recent call last):
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 131, in run
     self.connect()
     ~~~~~~~~~~~~^^
   File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 59, in connect
-    raise RuntimeError("Fallo en la conexión con RabbitMQ")
-RuntimeError: Fallo en la conexión con RabbitMQ
+    raise RuntimeError("Fallo en la conexiï¿½n con RabbitMQ")
+RuntimeError: Fallo en la conexiï¿½n con RabbitMQ
 2025-05-15 19:00:36,179 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 19:00:36,179 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 19:10:10,036 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.779167°N, 73.956824°W
+2025-05-15 19:00:36,179 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 19:10:10,036 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.779167ï¿½N, 73.956824ï¿½W
 2025-05-15 19:10:10,107 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 19:10:10,107 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 19:10:10,107 [INFO] spy.SPY001: Enviando alerta: BAJA - SECUESTRO desde 40.779167°N, 73.956824°W
-2025-05-15 19:10:27,697 [INFO] spy.SPY001: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.778254°N, 73.957241°W
-2025-05-15 19:10:44,762 [INFO] spy.SPY001: Enviando alerta: BAJA - INTRUSIÓN desde 40.777856°N, 73.956483°W
-2025-05-15 19:10:50,031 [INFO] spy.SPY001: Enviando alerta: BAJA - ROBO desde 40.777905°N, 73.956589°W
-2025-05-15 19:11:10,037 [INFO] spy.SPY001: Enviando alerta: BAJA - SECUESTRO desde 40.777271°N, 73.956604°W
-2025-05-15 19:11:15,790 [INFO] spy.SPY001: Enviando alerta: MEDIA - ROBO desde 40.776548°N, 73.957419°W
-2025-05-15 19:11:33,768 [INFO] spy.SPY001: Enviando alerta: MEDIA - INTRUSIÓN desde 40.777315°N, 73.957039°W
-2025-05-15 19:11:40,590 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.777012°N, 73.956331°W
-2025-05-15 19:11:46,370 [INFO] spy.SPY001: Enviando alerta: MEDIA - VIGILANCIA desde 40.776174°N, 73.956686°W
-2025-05-15 19:11:54,035 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.776593°N, 73.957566°W
-2025-05-15 19:11:59,692 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.776455°N, 73.958105°W
-2025-05-15 19:12:18,171 [INFO] spy.SPY001: Enviando alerta: BAJA - ROBO desde 40.775864°N, 73.958323°W
-2025-05-15 19:12:35,279 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.775847°N, 73.958131°W
-2025-05-15 19:12:50,601 [INFO] spy.SPY001: Enviando alerta: MEDIA - SECUESTRO desde 40.776513°N, 73.958069°W
-2025-05-15 19:13:03,769 [INFO] spy.SPY001: Enviando alerta: ALTA - VIGILANCIA desde 40.777334°N, 73.959059°W
-2025-05-15 19:13:19,550 [INFO] spy.SPY001: Enviando alerta: BAJA - ROBO desde 40.777822°N, 73.959286°W
-2025-05-15 19:13:38,704 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.777142°N, 73.958857°W
-2025-05-15 19:13:43,726 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.778073°N, 73.958530°W
-2025-05-15 19:13:49,948 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - SECUESTRO desde 40.778093°N, 73.958520°W
-2025-05-15 19:13:55,804 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - SECUESTRO desde 40.778809°N, 73.959514°W
-2025-05-15 19:14:15,176 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - SECUESTRO desde 40.778543°N, 73.958822°W
-2025-05-15 19:14:34,173 [INFO] spy.SPY001: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.778153°N, 73.959359°W
-2025-05-15 19:14:51,740 [INFO] spy.SPY001: Interrupción de teclado recibida
+2025-05-15 19:10:10,107 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 19:10:10,107 [INFO] spy.SPY001: Enviando alerta: BAJA - SECUESTRO desde 40.779167ï¿½N, 73.956824ï¿½W
+2025-05-15 19:10:27,697 [INFO] spy.SPY001: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.778254ï¿½N, 73.957241ï¿½W
+2025-05-15 19:10:44,762 [INFO] spy.SPY001: Enviando alerta: BAJA - INTRUSIï¿½N desde 40.777856ï¿½N, 73.956483ï¿½W
+2025-05-15 19:10:50,031 [INFO] spy.SPY001: Enviando alerta: BAJA - ROBO desde 40.777905ï¿½N, 73.956589ï¿½W
+2025-05-15 19:11:10,037 [INFO] spy.SPY001: Enviando alerta: BAJA - SECUESTRO desde 40.777271ï¿½N, 73.956604ï¿½W
+2025-05-15 19:11:15,790 [INFO] spy.SPY001: Enviando alerta: MEDIA - ROBO desde 40.776548ï¿½N, 73.957419ï¿½W
+2025-05-15 19:11:33,768 [INFO] spy.SPY001: Enviando alerta: MEDIA - INTRUSIï¿½N desde 40.777315ï¿½N, 73.957039ï¿½W
+2025-05-15 19:11:40,590 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - AMENAZA_BOMBA desde 40.777012ï¿½N, 73.956331ï¿½W
+2025-05-15 19:11:46,370 [INFO] spy.SPY001: Enviando alerta: MEDIA - VIGILANCIA desde 40.776174ï¿½N, 73.956686ï¿½W
+2025-05-15 19:11:54,035 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - INTRUSIï¿½N desde 40.776593ï¿½N, 73.957566ï¿½W
+2025-05-15 19:11:59,692 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - INTRUSIï¿½N desde 40.776455ï¿½N, 73.958105ï¿½W
+2025-05-15 19:12:18,171 [INFO] spy.SPY001: Enviando alerta: BAJA - ROBO desde 40.775864ï¿½N, 73.958323ï¿½W
+2025-05-15 19:12:35,279 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - VIGILANCIA desde 40.775847ï¿½N, 73.958131ï¿½W
+2025-05-15 19:12:50,601 [INFO] spy.SPY001: Enviando alerta: MEDIA - SECUESTRO desde 40.776513ï¿½N, 73.958069ï¿½W
+2025-05-15 19:13:03,769 [INFO] spy.SPY001: Enviando alerta: ALTA - VIGILANCIA desde 40.777334ï¿½N, 73.959059ï¿½W
+2025-05-15 19:13:19,550 [INFO] spy.SPY001: Enviando alerta: BAJA - ROBO desde 40.777822ï¿½N, 73.959286ï¿½W
+2025-05-15 19:13:38,704 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - AMENAZA_BOMBA desde 40.777142ï¿½N, 73.958857ï¿½W
+2025-05-15 19:13:43,726 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - INTRUSIï¿½N desde 40.778073ï¿½N, 73.958530ï¿½W
+2025-05-15 19:13:49,948 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - SECUESTRO desde 40.778093ï¿½N, 73.958520ï¿½W
+2025-05-15 19:13:55,804 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - SECUESTRO desde 40.778809ï¿½N, 73.959514ï¿½W
+2025-05-15 19:14:15,176 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - SECUESTRO desde 40.778543ï¿½N, 73.958822ï¿½W
+2025-05-15 19:14:34,173 [INFO] spy.SPY001: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.778153ï¿½N, 73.959359ï¿½W
+2025-05-15 19:14:51,740 [INFO] spy.SPY001: Interrupciï¿½n de teclado recibida
 2025-05-15 19:14:51,745 [INFO] spy.SPY001: Desconectado del servidor
-2025-05-15 19:14:51,745 [INFO] spy.SPY001: Espía SPY001 finalizado
-2025-05-15 19:16:12,896 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.757809°N, 74.002934°W
+2025-05-15 19:14:51,745 [INFO] spy.SPY001: Espï¿½a SPY001 finalizado
+2025-05-15 19:16:12,896 [INFO] spy.SPY001: Espï¿½a SPY001 inicializado en posiciï¿½n 40.757809ï¿½N, 74.002934ï¿½W
 2025-05-15 19:16:12,969 [INFO] spy.SPY001: Conectado al servidor usando rabbitmq
-2025-05-15 19:16:12,969 [INFO] spy.SPY001: Espía SPY001 comenzando a enviar alertas
-2025-05-15 19:16:12,969 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.757809°N, 74.002934°W
-2025-05-15 19:16:32,227 [INFO] spy.SPY001: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.758574°N, 74.003499°W
-2025-05-15 19:16:51,598 [INFO] spy.SPY001: Enviando alerta: BAJA - VIGILANCIA desde 40.758743°N, 74.002776°W
-2025-05-15 19:17:08,754 [INFO] spy.SPY001: Enviando alerta: BAJA - INTRUSIÓN desde 40.759005°N, 74.003503°W
-2025-05-15 19:17:25,678 [INFO] spy.SPY001: Enviando alerta: MEDIA - ROBO desde 40.758772°N, 74.003554°W
+2025-05-15 19:16:12,969 [INFO] spy.SPY001: Espï¿½a SPY001 comenzando a enviar alertas
+2025-05-15 19:16:12,969 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - AMENAZA_BOMBA desde 40.757809ï¿½N, 74.002934ï¿½W
+2025-05-15 19:16:32,227 [INFO] spy.SPY001: Enviando alerta: CRï¿½TICA - INTRUSIï¿½N desde 40.758574ï¿½N, 74.003499ï¿½W
+2025-05-15 19:16:51,598 [INFO] spy.SPY001: Enviando alerta: BAJA - VIGILANCIA desde 40.758743ï¿½N, 74.002776ï¿½W
+2025-05-15 19:17:08,754 [INFO] spy.SPY001: Enviando alerta: BAJA - INTRUSIï¿½N desde 40.759005ï¿½N, 74.003503ï¿½W
+2025-05-15 19:17:25,678 [INFO] spy.SPY001: Enviando alerta: MEDIA - ROBO desde 40.758772ï¿½N, 74.003554ï¿½W
