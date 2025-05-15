@@ -16,3 +16,17 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'
 2025-05-15 17:49:45,506 [INFO] spy.SPY004: Espía SPY004 finalizado
+2025-05-15 19:28:01,159 [INFO] spy.SPY004: Espía SPY004 inicializado en posición 40.743783°N, 74.005727°W
+2025-05-15 19:28:01,160 [WARNING] spy.SPY004: Intento 1 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 2
+2025-05-15 19:28:03,160 [WARNING] spy.SPY004: Intento 2 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 1
+2025-05-15 19:28:05,161 [WARNING] spy.SPY004: Intento 3 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 0
+2025-05-15 19:28:07,161 [ERROR] spy.SPY004: No se pudo conectar al servidor después de varios intentos
+2025-05-15 19:28:07,161 [ERROR] spy.SPY004: Error en el espía SPY004: No se pudo conectar al servidor
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 193, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 90, in connect
+    raise ConnectionError("No se pudo conectar al servidor")
+ConnectionError: No se pudo conectar al servidor
+2025-05-15 19:28:07,162 [INFO] spy.SPY004: Espía SPY004 finalizado

@@ -17,3 +17,35 @@ Traceback (most recent call last):
     ^
 TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
 2025-05-15 17:49:45,508 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 19:28:01,159 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.768468°N, 73.978717°W
+2025-05-15 19:28:01,159 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,160 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 233, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,163 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 19:28:01,163 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado

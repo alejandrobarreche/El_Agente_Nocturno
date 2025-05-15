@@ -385,3 +385,206 @@ TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue
 2025-05-15 17:49:45,508 [INFO] spy.SPY002: Espía SPY002 finalizado
 2025-05-15 17:49:45,508 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
 2025-05-15 17:49:45,508 [INFO] night_agent.AGENT003: Agente AGENT003 finalizado
+2025-05-15 19:27:58,620 [INFO] simulation: Iniciando simulación del sistema de agentes encubiertos
+2025-05-15 19:27:58,620 [INFO] simulation: Iniciando servidor central...
+2025-05-15 19:27:58,951 [INFO] server.central_server: Iniciando servidor central...
+2025-05-15 19:27:58,962 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 19:27:58,963 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=880, family=23, type=1, proto=6, laddr=('::1', 54697, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 19:27:58,963 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C54E1BE0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C54E1BE0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 19:27:59,017 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C54E1BE0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,018 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C54E1BE0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,018 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C54E1BE0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,018 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 19:27:59,024 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: spy_alerts, cola: server_alerts_queue
+2025-05-15 19:27:59,024 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: alert.*
+2025-05-15 19:27:59,026 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 19:27:59,026 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=912, family=23, type=1, proto=6, laddr=('::1', 54700, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 19:27:59,027 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5520CD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5520CD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 19:27:59,077 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5520CD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,078 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5520CD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,078 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5520CD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,078 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 19:27:59,084 [INFO] communication.rabbitmq.consumer: Conectado a RabbitMQ en localhost:5672, exchange: agent_status, cola: server_status_queue
+2025-05-15 19:27:59,084 [INFO] communication.rabbitmq.consumer: Escuchando mensajes con claves de enrutamiento: status.*
+2025-05-15 19:27:59,086 [INFO] pika.adapters.utils.connection_workflow: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-05-15 19:27:59,086 [INFO] pika.adapters.utils.io_services_utils: Socket connected: <socket.socket fd=888, family=23, type=1, proto=6, laddr=('::1', 54703, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-05-15 19:27:59,087 [INFO] pika.adapters.utils.connection_workflow: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5521E50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5521E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-05-15 19:27:59,137 [INFO] pika.adapters.utils.connection_workflow: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5521E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,138 [INFO] pika.adapters.utils.connection_workflow: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5521E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,138 [INFO] pika.adapters.blocking_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002A0C5521E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-05-15 19:27:59,138 [INFO] pika.adapters.blocking_connection: Created channel=1
+2025-05-15 19:27:59,142 [INFO] communication.rabbitmq.publisher: Conectado a RabbitMQ en localhost:5672, exchange: night_tasks
+2025-05-15 19:27:59,145 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_alerts_queue
+2025-05-15 19:27:59,148 [ERROR] server.central_server: Error al manejar actualización de estado de agente: 'StatusMessage' object has no attribute 'agent_id'
+2025-05-15 19:27:59,148 [INFO] communication.rabbitmq.consumer: Consumidor iniciado para la cola server_status_queue
+2025-05-15 19:27:59,148 [INFO] server.central_server: Conexión con RabbitMQ establecida correctamente
+2025-05-15 19:27:59,148 [INFO] server.central_server: Servidor central en funcionamiento
+2025-05-15 19:28:00,632 [INFO] simulation: Iniciando 3 agentes nocturnos...
+2025-05-15 19:28:00,648 [INFO] simulation: Iniciando 5 espías...
+2025-05-15 19:28:00,678 [INFO] simulation: Simulación en ejecución. Presione Ctrl+C para terminar.
+2025-05-15 19:28:01,123 [INFO] spy.SPY002: Espía SPY002 inicializado en posición 40.768838°N, 74.035044°W
+2025-05-15 19:28:01,123 [WARNING] spy.SPY002: Intento 1 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 2
+2025-05-15 19:28:01,155 [INFO] spy.SPY005: Espía SPY005 inicializado en posición 40.760169°N, 73.981350°W
+2025-05-15 19:28:01,156 [WARNING] spy.SPY005: Intento 1 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 2
+2025-05-15 19:28:01,158 [INFO] spy.SPY001: Espía SPY001 inicializado en posición 40.763817°N, 73.953228°W
+2025-05-15 19:28:01,159 [WARNING] spy.SPY001: Intento 1 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 2
+2025-05-15 19:28:01,159 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.768468°N, 73.978717°W
+2025-05-15 19:28:01,159 [INFO] spy.SPY004: Espía SPY004 inicializado en posición 40.743783°N, 74.005727°W
+2025-05-15 19:28:01,160 [INFO] night_agent.AGENT003: Agente AGENT003 inicializado en posición 40.740323°N, 73.955759°W
+2025-05-15 19:28:01,160 [WARNING] spy.SPY004: Intento 1 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 2
+2025-05-15 19:28:01,159 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,160 [ERROR] night_agent.AGENT003: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,160 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 233, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,163 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 19:28:01,163 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 19:28:01,163 [ERROR] night_agent.AGENT003: Error en el agente AGENT003: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 233, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,164 [INFO] night_agent.AGENT003: Deteniendo agente AGENT003
+2025-05-15 19:28:01,164 [INFO] night_agent.AGENT003: Agente AGENT003 finalizado
+2025-05-15 19:28:01,168 [INFO] night_agent.AGENT002: Agente AGENT002 inicializado en posición 40.748051°N, 73.955805°W
+2025-05-15 19:28:01,168 [INFO] spy.SPY003: Espía SPY003 inicializado en posición 40.740103°N, 74.001110°W
+2025-05-15 19:28:01,169 [WARNING] spy.SPY003: Intento 1 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 2
+2025-05-15 19:28:01,169 [ERROR] night_agent.AGENT002: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,170 [ERROR] night_agent.AGENT002: Error en el agente AGENT002: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 233, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 75, in connect
+    self.comm_client = CommunicationClient(
+                       ~~~~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        callback=self.handle_task
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'queue'
+2025-05-15 19:28:01,170 [INFO] night_agent.AGENT002: Deteniendo agente AGENT002
+2025-05-15 19:28:01,170 [INFO] night_agent.AGENT002: Agente AGENT002 finalizado
+2025-05-15 19:28:03,124 [WARNING] spy.SPY002: Intento 2 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 1
+2025-05-15 19:28:03,156 [WARNING] spy.SPY005: Intento 2 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 1
+2025-05-15 19:28:03,159 [WARNING] spy.SPY001: Intento 2 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 1
+2025-05-15 19:28:03,160 [WARNING] spy.SPY004: Intento 2 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 1
+2025-05-15 19:28:03,169 [WARNING] spy.SPY003: Intento 2 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 1
+2025-05-15 19:28:05,124 [WARNING] spy.SPY002: Intento 3 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 0
+2025-05-15 19:28:05,157 [WARNING] spy.SPY005: Intento 3 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 0
+2025-05-15 19:28:05,160 [WARNING] spy.SPY001: Intento 3 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 0
+2025-05-15 19:28:05,161 [WARNING] spy.SPY004: Intento 3 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 0
+2025-05-15 19:28:05,170 [WARNING] spy.SPY003: Intento 3 de conexión fallido: RabbitMQPublisher.__init__() got an unexpected keyword argument 'routing_key'. Intentos restantes: 0
+2025-05-15 19:28:07,125 [ERROR] spy.SPY002: No se pudo conectar al servidor después de varios intentos
+2025-05-15 19:28:07,125 [ERROR] spy.SPY002: Error en el espía SPY002: No se pudo conectar al servidor
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 193, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 90, in connect
+    raise ConnectionError("No se pudo conectar al servidor")
+ConnectionError: No se pudo conectar al servidor
+2025-05-15 19:28:07,127 [INFO] spy.SPY002: Espía SPY002 finalizado
+2025-05-15 19:28:07,157 [ERROR] spy.SPY005: No se pudo conectar al servidor después de varios intentos
+2025-05-15 19:28:07,158 [ERROR] spy.SPY005: Error en el espía SPY005: No se pudo conectar al servidor
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 193, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 90, in connect
+    raise ConnectionError("No se pudo conectar al servidor")
+ConnectionError: No se pudo conectar al servidor
+2025-05-15 19:28:07,159 [INFO] spy.SPY005: Espía SPY005 finalizado
+2025-05-15 19:28:07,160 [ERROR] spy.SPY001: No se pudo conectar al servidor después de varios intentos
+2025-05-15 19:28:07,161 [ERROR] spy.SPY004: No se pudo conectar al servidor después de varios intentos
+2025-05-15 19:28:07,161 [ERROR] spy.SPY001: Error en el espía SPY001: No se pudo conectar al servidor
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 193, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 90, in connect
+    raise ConnectionError("No se pudo conectar al servidor")
+ConnectionError: No se pudo conectar al servidor
+2025-05-15 19:28:07,161 [INFO] spy.SPY001: Espía SPY001 finalizado
+2025-05-15 19:28:07,161 [ERROR] spy.SPY004: Error en el espía SPY004: No se pudo conectar al servidor
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 193, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 90, in connect
+    raise ConnectionError("No se pudo conectar al servidor")
+ConnectionError: No se pudo conectar al servidor
+2025-05-15 19:28:07,162 [INFO] spy.SPY004: Espía SPY004 finalizado
+2025-05-15 19:28:07,171 [ERROR] spy.SPY003: No se pudo conectar al servidor después de varios intentos
+2025-05-15 19:28:07,171 [ERROR] spy.SPY003: Error en el espía SPY003: No se pudo conectar al servidor
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 193, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 90, in connect
+    raise ConnectionError("No se pudo conectar al servidor")
+ConnectionError: No se pudo conectar al servidor
+2025-05-15 19:28:07,172 [INFO] spy.SPY003: Espía SPY003 finalizado
