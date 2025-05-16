@@ -12,6 +12,7 @@ import config
 from common.message import Message, AlertMessage
 from common.utils import generate_emergency, get_random_sleep_time, safe_sleep, setup_logger
 from common.geo import generate_random_position, format_position
+from communication.rabbitmq import RabbitMQPublisher
 
 # Determinar el tipo de comunicación según configuración
 if config.COMMUNICATION_MODE == "sockets":
@@ -43,88 +44,61 @@ def validate_config():
             raise ValueError(f"Falta la configuración requerida: {key}")
 
 class Spy:
-    """
-    Clase que representa un agente encubierto (espía) que genera alertas.
-    """
-
     def __init__(self, spy_id, position=None):
-        """
-        Inicializa un nuevo espía.
-
-        Args:
-            spy_id (str): Identificador único del espía
-            position (tuple, optional): Coordenadas (lat, lon) iniciales
-        """
-        validate_config()  # Validar configuración al inicializar
         self.spy_id = spy_id
-        self.position = position if position else generate_random_position()
+        self.position = position or generate_random_position()
         self.logger = setup_logger(f"spy.{spy_id}", f"spy_{spy_id}.log")
         self.stop_event = Event()
         self.comm_client = None
-
-        self.logger.info(f"Espía {spy_id} inicializado en posición {format_position(self.position)}")
+        self.logger.info(f"Esp\u00eda {spy_id} inicializado en posici\u00f3n {format_position(self.position)}")
 
     def connect(self):
-        """Establece conexión con el servidor según el modo configurado"""
         if config.COMMUNICATION_MODE == "sockets":
             self.comm_client = CommunicationClient(config.SOCKET_HOST, config.SOCKET_PORT)
-        else:  # "rabbitmq"
-            self.comm_client = CommunicationClient(
+        else:
+            self.comm_client = RabbitMQPublisher(
                 host=config.RABBITMQ_HOST,
                 port=config.RABBITMQ_PORT,
                 username=config.RABBITMQ_USER,
                 password=config.RABBITMQ_PASSWORD,
-                exchange=config.RABBITMQ_EXCHANGE,
-                routing_key="alerts"
+                exchange='night_tasks',
+                exchange_type='topic'
             )
-            connected = self.comm_client.connect()
-            if not connected:
-                self.logger.error("No se pudo establecer conexión con RabbitMQ")
-                raise RuntimeError("Fallo en la conexión con RabbitMQ")
+            if not self.comm_client.connect():
+                self.logger.error("No se pudo establecer conexi\u00f3n con RabbitMQ")
+                raise RuntimeError("Fallo en la conexi\u00f3n con RabbitMQ")
         self.logger.info(f"Conectado al servidor usando {config.COMMUNICATION_MODE}")
 
     def disconnect(self):
-        """Cierra la conexión con el servidor"""
         if self.comm_client:
             self.comm_client.close()
             self.logger.info("Desconectado del servidor")
 
     def move_randomly(self):
-        """
-        Mueve el espía a una posición aleatoria cercana a su posición actual.
-        """
         try:
             lat, lon = self.position
             lat_delta = random.uniform(-0.001, 0.001)
             lon_delta = random.uniform(-0.001, 0.001)
-
             new_lat = max(min(lat + lat_delta, config.MAP_MAX_LAT), config.MAP_MIN_LAT)
             new_lon = max(min(lon + lon_delta, config.MAP_MAX_LON), config.MAP_MIN_LON)
-
             self.position = (new_lat, new_lon)
-            self.logger.debug(f"Nueva posición: {format_position(self.position)}")
-
-            if new_lat == config.MAP_MIN_LAT or new_lat == config.MAP_MAX_LAT:
-                self.logger.warning("El espía alcanzó el límite de latitud")
-            if new_lon == config.MAP_MIN_LON or new_lon == config.MAP_MAX_LON:
-                self.logger.warning("El espía alcanzó el límite de longitud")
-
-        except AttributeError as e:
-            self.logger.exception("Error en los límites del mapa: asegúrese de que MAP_MIN_LAT, MAP_MAX_LAT, etc., estén configurados")
+            self.logger.debug(f"Nueva posici\u00f3n: {format_position(self.position)}")
+            if new_lat in [config.MAP_MIN_LAT, config.MAP_MAX_LAT]:
+                self.logger.warning("El esp\u00eda alcanz\u00f3 el l\u00edmite de latitud")
+            if new_lon in [config.MAP_MIN_LON, config.MAP_MAX_LON]:
+                self.logger.warning("El esp\u00eda alcanz\u00f3 el l\u00edmite de longitud")
+        except AttributeError:
+            self.logger.exception("Error en los l\u00edmites del mapa")
             raise
 
+
     def generate_alert(self):
-        """
-        Genera y envía una alerta al servidor.
-        """
         try:
-            # Generar datos de emergencia
             level, emerg_type = generate_emergency()
         except Exception as e:
-            self.logger.exception(f"Error al generar datos de emergencia: {e}")
+            self.logger.exception(f"Error al generar emergencia: {e}")
             return
 
-        # Crear mensaje
         message = AlertMessage(
             sender_id=self.spy_id,
             position=self.position,
@@ -132,70 +106,52 @@ class Spy:
             emergency_type=emerg_type
         )
 
-        # Enviar alerta
+        json_message = message.to_json().encode("utf-8")
         self.logger.info(f"Enviando alerta: {level} - {emerg_type} desde {format_position(self.position)}")
-        self.comm_client.publish_message(message, routing_key="alert.vigilancia")
+
+        try:
+            if hasattr(self.comm_client, "publish_message"):
+                self.comm_client.publish_message(message, routing_key='task.broadcast')
+            elif hasattr(self.comm_client, "publish"):
+                self.comm_client.publish(message, routing_key='task.broadcast')
+            else:
+                self.logger.error("Cliente de comunicaci\u00f3n no soporta publicaci\u00f3n de mensajes")
+        except Exception as e:
+            self.logger.exception(f"Error al enviar la alerta: {e}")
 
     def alert_loop(self):
-        """
-        Bucle principal que genera alertas periódicamente.
-        """
         if not self.comm_client:
-            self.logger.error("No hay conexión activa con el servidor. Abortando bucle de alertas.")
+            self.logger.error("No hay conexi\u00f3n activa con el servidor.")
             return
 
-        self.logger.info(f"Espía {self.spy_id} comenzando a enviar alertas")
+        self.logger.info(f"Esp\u00eda {self.spy_id} comenzando a enviar alertas")
 
         while not self.stop_event.is_set():
             try:
-                # Generar y enviar alerta
                 self.generate_alert()
-
-                # Mover a nueva posición
                 self.move_randomly()
-
-                # Validar tiempos de espera
                 min_interval = max(0, config.MIN_ALERT_INTERVAL)
                 max_interval = max(min_interval, config.MAX_ALERT_INTERVAL)
-
-                # Esperar un tiempo aleatorio antes de la siguiente alerta
                 wait_time = get_random_sleep_time(min_interval, max_interval)
-                self.logger.debug(f"[{self.spy_id}] Esperando {wait_time:.2f} segundos para la próxima alerta")
-
-                # Esperar, pero permitiendo interrupciones
+                self.logger.debug(f"[{self.spy_id}] Esperando {wait_time:.2f}s para la pr\u00f3xima alerta")
                 safe_sleep(wait_time)
             except Exception as e:
                 self.logger.exception(f"Error en el bucle de alertas: {e}")
+
         self.logger.info("Bucle de alertas detenido")
 
     def run(self):
-        """
-        Método principal para iniciar el espía.
-        """
         try:
             self.connect()
             self.alert_loop()
         except KeyboardInterrupt:
-            self.logger.info("Interrupción de teclado recibida")
+            self.logger.info("Interrupci\u00f3n de teclado recibida")
         except Exception as e:
-            self.logger.exception(f"Error en el espía {self.spy_id}: {e}")
+            self.logger.exception(f"Error en el esp\u00eda {self.spy_id}: {e}")
         finally:
             self.disconnect()
-            self.logger.info(f"Espía {self.spy_id} finalizado")
-
-    def send_message(self, message: str):
-        """Publica un mensaje en el intercambio configurado."""
-        if not self.channel:
-            raise RuntimeError("No hay conexión activa con RabbitMQ")
-        self.channel.basic_publish(
-            exchange=self.exchange,
-            routing_key=self.routing_key,
-            body=message
-        )
+            self.logger.info(f"Esp\u00eda {self.spy_id} finalizado")
 
     def stop(self):
-        """
-        Detiene el espía.
-        """
-        self.logger.info(f"Deteniendo espía {self.spy_id}")
+        self.logger.info(f"Deteniendo esp\u00eda {self.spy_id}")
         self.stop_event.set()

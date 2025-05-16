@@ -12,7 +12,7 @@ import pickle
 import time
 from typing import Any, Dict, Optional
 
-from common.message import Message
+#from common.message import Message
 
 logger = logging.getLogger(__name__)
 
@@ -61,7 +61,7 @@ class SocketClient:
         logger.error("No se pudo reconectar con el servidor después de varios intentos")
         return False
 
-    def send_message(self, message: Message) -> bool:
+    def send_message(self, message) -> bool:
         """
         Envía un mensaje al servidor.
 
@@ -93,7 +93,7 @@ class SocketClient:
             logger.error(f"Error al enviar mensaje: {e}")
             return False
 
-    def receive_message(self) -> Optional[Message]:
+    def receive_message(self):
         """
         Recibe un mensaje del servidor.
 

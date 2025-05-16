@@ -146,3 +146,1216 @@
 2025-05-15 21:40:27,572 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.702718°N, 74.020241°W
 2025-05-15 21:40:37,797 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.702210°N, 74.020786°W
 2025-05-15 21:40:46,006 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.702010°N, 74.020990°W
+2025-05-15 21:51:34,704 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.720812°N, 73.981189°W
+2025-05-15 21:51:34,801 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 21:51:34,801 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 21:51:34,801 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.720812°N, 73.981189°W
+2025-05-15 21:51:54,135 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.720157°N, 73.981420°W
+2025-05-15 21:52:06,142 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.719645°N, 73.981927°W
+2025-05-15 21:52:12,699 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.719761°N, 73.981990°W
+2025-05-15 21:52:25,865 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.719849°N, 73.982600°W
+2025-05-15 21:52:33,266 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.720299°N, 73.983232°W
+2025-05-15 21:52:47,755 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.720432°N, 73.983518°W
+2025-05-15 21:52:58,008 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.720801°N, 73.982943°W
+2025-05-15 21:53:42,184 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.798427°N, 74.018827°W
+2025-05-15 21:53:42,276 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 21:53:42,277 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 21:53:42,277 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.798427°N, 74.018827°W
+2025-05-15 21:53:58,502 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.798606°N, 74.019630°W
+2025-05-15 21:54:07,408 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.798515°N, 74.019901°W
+2025-05-15 21:54:16,935 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.798622°N, 74.019266°W
+2025-05-15 21:54:23,536 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.797623°N, 74.019005°W
+2025-05-15 21:54:35,157 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.798354°N, 74.019777°W
+2025-05-15 21:54:43,726 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.798773°N, 74.020560°W
+2025-05-15 21:54:53,104 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.799444°N, 74.021199°W
+2025-05-15 21:54:53,104 [WARNING] spy.SPY012: El espía alcanzó el límite de latitud
+2025-05-15 21:55:04,518 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.800000°N, 74.022046°W
+2025-05-15 21:55:15,512 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.799023°N, 74.021350°W
+2025-05-15 21:55:24,685 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.799580°N, 74.021866°W
+2025-05-15 21:55:38,062 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.799651°N, 74.022513°W
+2025-05-15 21:55:38,062 [WARNING] spy.SPY012: El espía alcanzó el límite de latitud
+2025-05-15 21:55:51,421 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.800000°N, 74.023238°W
+2025-05-15 21:55:51,422 [WARNING] spy.SPY012: El espía alcanzó el límite de latitud
+2025-05-15 21:55:57,557 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.800000°N, 74.023554°W
+2025-05-15 21:56:10,530 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.799176°N, 74.023230°W
+2025-05-15 21:56:18,868 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.798868°N, 74.022585°W
+2025-05-15 21:56:28,663 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.799163°N, 74.021971°W
+2025-05-15 21:56:39,150 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.799347°N, 74.022456°W
+2025-05-15 21:56:50,570 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.798609°N, 74.021523°W
+2025-05-15 21:57:02,591 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.798415°N, 74.020686°W
+2025-05-15 21:57:11,140 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.797519°N, 74.020090°W
+2025-05-15 21:57:13,614 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.797521°N, 74.021025°W
+2025-05-15 21:57:52,175 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.743479°N, 73.985301°W
+2025-05-15 21:57:52,381 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 21:57:52,382 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 21:57:52,382 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.743479°N, 73.985301°W
+2025-05-15 21:58:03,139 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.743548°N, 73.985718°W
+2025-05-15 21:58:11,245 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.743524°N, 73.985958°W
+2025-05-15 21:58:15,603 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.743220°N, 73.985245°W
+2025-05-15 22:07:34,543 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.776994°N, 73.964236°W
+2025-05-15 22:07:34,676 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 22:07:34,676 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 22:07:34,677 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.776994°N, 73.964236°W
+2025-05-15 22:07:41,421 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.777261°N, 73.963311°W
+2025-05-15 22:07:48,065 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.777275°N, 73.963315°W
+2025-05-15 22:08:03,381 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.776461°N, 73.963599°W
+2025-05-15 22:08:10,111 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.776079°N, 73.963401°W
+2025-05-15 22:25:38,366 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.753053°N, 74.022060°W
+2025-05-15 22:25:38,598 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 22:25:38,599 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 22:25:38,645 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 22:25:38,645 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 22:27:42,450 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.753623°N, 74.041470°W
+2025-05-15 22:27:42,645 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 22:27:42,645 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 22:27:42,716 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 22:27:42,716 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 22:31:42,760 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.723618°N, 74.016972°W
+2025-05-15 22:31:42,870 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 22:31:42,870 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 22:31:42,914 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 22:31:42,915 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 22:48:42,239 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.708120°N, 74.022057°W
+2025-05-15 22:48:42,370 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 22:48:42,371 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 22:48:42,371 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.708120°N, 74.022057°W
+2025-05-15 22:48:47,422 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.707832°N, 74.022644°W
+2025-05-15 22:48:58,981 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.706834°N, 74.022439°W
+2025-05-15 22:49:11,092 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.706337°N, 74.022583°W
+2025-05-15 22:49:26,421 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.705354°N, 74.022743°W
+2025-05-15 22:49:31,646 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.704817°N, 74.022598°W
+2025-05-15 22:49:37,347 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.704300°N, 74.022302°W
+2025-05-15 22:49:44,553 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.704520°N, 74.022495°W
+2025-05-15 22:49:51,414 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.704747°N, 74.022286°W
+2025-05-15 22:49:58,563 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.705509°N, 74.021970°W
+2025-05-15 22:50:13,540 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.705777°N, 74.022785°W
+2025-05-15 22:50:21,191 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.706308°N, 74.022271°W
+2025-05-15 22:50:38,732 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.705440°N, 74.022642°W
+2025-05-15 22:50:55,803 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.705731°N, 74.022329°W
+2025-05-15 22:51:06,271 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.706691°N, 74.023151°W
+2025-05-15 22:51:25,191 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.707033°N, 74.023707°W
+2025-05-15 22:51:40,346 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.707236°N, 74.024447°W
+2025-05-15 22:51:47,812 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.707966°N, 74.024332°W
+2025-05-15 22:51:53,128 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.708800°N, 74.024624°W
+2025-05-15 22:52:02,583 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.708985°N, 74.024064°W
+2025-05-15 22:52:12,301 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.709908°N, 74.023474°W
+2025-05-15 22:52:26,164 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.709096°N, 74.024092°W
+2025-05-15 22:52:37,464 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.710045°N, 74.024049°W
+2025-05-15 22:52:45,240 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.710719°N, 74.024239°W
+2025-05-15 22:52:56,000 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.709858°N, 74.023440°W
+2025-05-15 22:53:12,972 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.709126°N, 74.023751°W
+2025-05-15 22:53:23,766 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.709460°N, 74.022767°W
+2025-05-15 22:53:33,476 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.709002°N, 74.022466°W
+2025-05-15 22:53:38,890 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.709458°N, 74.022603°W
+2025-05-15 22:53:46,872 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.709474°N, 74.022771°W
+2025-05-15 22:53:52,197 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.708806°N, 74.022273°W
+2025-05-15 22:54:57,785 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.710682°N, 73.970374°W
+2025-05-15 22:54:57,860 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 22:54:57,860 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 22:54:57,861 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.710682°N, 73.970374°W
+2025-05-15 22:55:12,244 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.710139°N, 73.969653°W
+2025-05-15 22:55:29,211 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.709321°N, 73.968904°W
+2025-05-15 22:55:41,965 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.709537°N, 73.969221°W
+2025-05-15 22:55:57,308 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.708623°N, 73.969997°W
+2025-05-15 22:56:06,505 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.709283°N, 73.969719°W
+2025-05-15 22:56:24,184 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.709041°N, 73.970246°W
+2025-05-15 22:56:35,459 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.708797°N, 73.969982°W
+2025-05-15 22:56:46,218 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.708488°N, 73.970634°W
+2025-05-15 22:57:00,612 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.708635°N, 73.969750°W
+2025-05-15 22:57:09,450 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.709267°N, 73.969443°W
+2025-05-15 22:57:23,732 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.710248°N, 73.969067°W
+2025-05-15 22:57:33,325 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.709312°N, 73.968087°W
+2025-05-15 22:57:42,677 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.709296°N, 73.968378°W
+2025-05-15 22:58:00,903 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.708851°N, 73.968198°W
+2025-05-15 22:58:07,085 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.709515°N, 73.968123°W
+2025-05-15 22:58:18,399 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.708854°N, 73.967317°W
+2025-05-15 22:58:30,951 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.708149°N, 73.967331°W
+2025-05-15 22:58:42,358 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.707534°N, 73.966458°W
+2025-05-15 22:58:49,705 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.707363°N, 73.966105°W
+2025-05-15 22:58:58,867 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.707992°N, 73.965673°W
+2025-05-15 22:59:12,799 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.708863°N, 73.965903°W
+2025-05-15 22:59:23,988 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.708968°N, 73.965899°W
+2025-05-15 23:04:42,246 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.763583°N, 74.032884°W
+2025-05-15 23:04:42,446 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 23:04:42,447 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 23:04:42,447 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.763583°N, 74.032884°W
+2025-05-15 23:04:59,425 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.763324°N, 74.032376°W
+2025-05-15 23:05:19,413 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.763447°N, 74.032951°W
+2025-05-15 23:05:37,644 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.762481°N, 74.032638°W
+2025-05-15 23:05:54,371 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.763471°N, 74.032334°W
+2025-05-15 23:05:59,086 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.764343°N, 74.032812°W
+2025-05-15 23:10:10,532 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.786543°N, 73.980761°W
+2025-05-15 23:10:10,663 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 23:10:10,663 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 23:10:10,663 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.786543°N, 73.980761°W
+2025-05-15 23:10:20,245 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.786496°N, 73.979970°W
+2025-05-15 23:10:33,202 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.785909°N, 73.980566°W
+2025-05-15 23:10:51,093 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.786722°N, 73.980136°W
+2025-05-15 23:11:04,934 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.787665°N, 73.979465°W
+2025-05-15 23:11:20,911 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.788498°N, 73.979674°W
+2025-05-15 23:11:39,306 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.789136°N, 73.979273°W
+2025-05-15 23:11:48,873 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.788360°N, 73.979529°W
+2025-05-15 23:12:08,570 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.787835°N, 73.979760°W
+2025-05-15 23:12:24,657 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.787506°N, 73.979434°W
+2025-05-15 23:12:39,724 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.787973°N, 73.980392°W
+2025-05-15 23:12:51,453 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.788554°N, 73.980459°W
+2025-05-15 23:13:02,178 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.789121°N, 73.981307°W
+2025-05-15 23:13:16,270 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.789106°N, 73.980479°W
+2025-05-15 23:13:34,391 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.788193°N, 73.979706°W
+2025-05-15 23:13:41,660 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.787830°N, 73.980487°W
+2025-05-15 23:13:48,562 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.788307°N, 73.979552°W
+2025-05-15 23:14:07,373 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.787330°N, 73.979708°W
+2025-05-15 23:14:15,225 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.787612°N, 73.979268°W
+2025-05-15 23:14:25,315 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.786625°N, 73.979538°W
+2025-05-15 23:14:43,949 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.786349°N, 73.978854°W
+2025-05-15 23:15:03,496 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.785406°N, 73.978613°W
+2025-05-15 23:15:11,626 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.785192°N, 73.979327°W
+2025-05-15 23:15:27,291 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.785831°N, 73.978732°W
+2025-05-15 23:15:38,950 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.785434°N, 73.978780°W
+2025-05-15 23:15:51,245 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.786046°N, 73.978171°W
+2025-05-15 23:16:05,611 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.785806°N, 73.977536°W
+2025-05-15 23:16:19,874 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.785060°N, 73.976832°W
+2025-05-15 23:16:31,363 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.784920°N, 73.977341°W
+2025-05-15 23:16:38,098 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.785644°N, 73.977696°W
+2025-05-15 23:16:48,821 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.785401°N, 73.978132°W
+2025-05-15 23:16:58,805 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.786001°N, 73.978964°W
+2025-05-15 23:17:10,403 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.785272°N, 73.978669°W
+2025-05-15 23:17:22,868 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.785581°N, 73.978182°W
+2025-05-15 23:17:28,060 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.786142°N, 73.977347°W
+2025-05-15 23:17:34,808 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.786239°N, 73.976971°W
+2025-05-15 23:17:44,857 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.785536°N, 73.976800°W
+2025-05-15 23:17:51,702 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.786385°N, 73.975903°W
+2025-05-15 23:18:04,813 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.786504°N, 73.976653°W
+2025-05-15 23:18:21,443 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.787482°N, 73.977068°W
+2025-05-15 23:18:39,765 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.786510°N, 73.977037°W
+2025-05-15 23:18:59,522 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.785738°N, 73.976396°W
+2025-05-15 23:19:18,490 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.786568°N, 73.976410°W
+2025-05-15 23:19:26,122 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.786700°N, 73.975830°W
+2025-05-15 23:19:39,976 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.787233°N, 73.975863°W
+2025-05-15 23:19:49,163 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.787806°N, 73.976007°W
+2025-05-15 23:19:59,116 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.788634°N, 73.975660°W
+2025-05-15 23:20:05,977 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.789297°N, 73.976076°W
+2025-05-15 23:20:25,761 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.788328°N, 73.975207°W
+2025-05-15 23:20:31,488 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.788557°N, 73.974415°W
+2025-05-15 23:20:50,392 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.789239°N, 73.974272°W
+2025-05-15 23:21:09,944 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.788334°N, 73.973636°W
+2025-05-15 23:21:15,559 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.788892°N, 73.973668°W
+2025-05-15 23:21:32,664 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.787944°N, 73.973694°W
+2025-05-15 23:21:50,419 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.787909°N, 73.974481°W
+2025-05-15 23:21:59,047 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.788819°N, 73.973571°W
+2025-05-15 23:22:18,097 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.789432°N, 73.972878°W
+2025-05-15 23:22:24,969 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.790308°N, 73.973576°W
+2025-05-15 23:22:33,981 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.790484°N, 73.973125°W
+2025-05-15 23:22:43,787 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.790763°N, 73.972574°W
+2025-05-15 23:22:59,115 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.790346°N, 73.972253°W
+2025-05-15 23:23:19,018 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.790839°N, 73.972311°W
+2025-05-15 23:23:28,819 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.791434°N, 73.972539°W
+2025-05-15 23:23:44,204 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.791392°N, 73.972834°W
+2025-05-15 23:24:02,578 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.792011°N, 73.973588°W
+2025-05-15 23:24:13,407 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.791173°N, 73.972936°W
+2025-05-15 23:24:28,936 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.791570°N, 73.972145°W
+2025-05-15 23:25:17,918 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.705764°N, 74.014858°W
+2025-05-15 23:25:18,009 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:25:18,009 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:25:18,063 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:25:18,063 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:30:59,520 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.760811°N, 73.983995°W
+2025-05-15 23:30:59,610 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:30:59,610 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:30:59,654 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:30:59,654 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:32:44,396 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.712954°N, 73.962185°W
+2025-05-15 23:32:44,494 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:32:44,495 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:32:44,539 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:32:44,539 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:34:56,797 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.779214°N, 73.981454°W
+2025-05-15 23:34:56,882 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:34:56,883 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:34:56,921 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:34:56,922 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:36:19,458 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.791040°N, 74.044929°W
+2025-05-15 23:36:19,584 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:36:19,584 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:36:19,649 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:36:19,649 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:38:14,438 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.702494°N, 73.954932°W
+2025-05-15 23:38:14,538 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:38:14,538 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:38:14,581 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:38:14,582 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:40:04,481 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.742425°N, 73.973935°W
+2025-05-15 23:40:04,615 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:40:04,620 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:40:04,669 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:40:04,669 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:43:11,518 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.793910°N, 74.048938°W
+2025-05-15 23:43:11,637 [ERROR] spy.SPY012: No se pudo establecer conexión con RabbitMQ
+2025-05-15 23:43:11,637 [ERROR] spy.SPY012: Error en el espía SPY012: Fallo en la conexión con RabbitMQ
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 178, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 85, in connect
+    raise RuntimeError("Fallo en la conexión con RabbitMQ")
+RuntimeError: Fallo en la conexión con RabbitMQ
+2025-05-15 23:43:11,689 [INFO] spy.SPY012: Desconectado del servidor
+2025-05-15 23:43:11,690 [INFO] spy.SPY012: Espía SPY012 finalizado
+2025-05-15 23:46:39,378 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.726709°N, 74.033537°W
+2025-05-15 23:46:39,455 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 23:46:39,455 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 23:46:39,456 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.726709°N, 74.033537°W
+2025-05-15 23:46:59,378 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.727527°N, 74.033436°W
+2025-05-15 23:47:06,136 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.726973°N, 74.033769°W
+2025-05-15 23:47:13,467 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.726170°N, 74.033394°W
+2025-05-15 23:47:33,390 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.727027°N, 74.032688°W
+2025-05-15 23:47:39,195 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.726034°N, 74.031962°W
+2025-05-15 23:47:51,519 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.725053°N, 74.032773°W
+2025-05-15 23:48:06,936 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.725931°N, 74.032149°W
+2025-05-15 23:48:12,182 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.725790°N, 74.031962°W
+2025-05-15 23:48:26,061 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.726094°N, 74.031440°W
+2025-05-15 23:48:36,022 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.726955°N, 74.031698°W
+2025-05-15 23:50:02,005 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.798513°N, 73.953929°W
+2025-05-15 23:50:02,123 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 23:50:02,123 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 23:50:02,123 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.798513°N, 73.953929°W
+2025-05-15 23:50:12,456 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.798594°N, 73.953443°W
+2025-05-15 23:55:36,359 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.760392°N, 73.984228°W
+2025-05-15 23:55:36,451 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 23:55:36,451 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 23:55:36,452 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.760392°N, 73.984228°W
+2025-05-15 23:55:55,635 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.760892°N, 73.983739°W
+2025-05-15 23:56:12,430 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.761060°N, 73.984584°W
+2025-05-15 23:56:18,300 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.761973°N, 73.983998°W
+2025-05-15 23:56:30,406 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.762709°N, 73.983117°W
+2025-05-15 23:56:42,230 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.763455°N, 73.983351°W
+2025-05-15 23:56:52,896 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.763790°N, 73.984179°W
+2025-05-15 23:59:49,358 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.705431°N, 73.996585°W
+2025-05-15 23:59:49,420 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-15 23:59:49,420 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-15 23:59:49,421 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.705431°N, 73.996585°W
+2025-05-15 23:59:57,535 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.705060°N, 73.997236°W
+2025-05-16 00:00:12,662 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.704698°N, 73.996762°W
+2025-05-16 00:00:24,970 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.705075°N, 73.996921°W
+2025-05-16 00:00:32,912 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.705850°N, 73.996638°W
+2025-05-16 00:00:52,756 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.706428°N, 73.996612°W
+2025-05-16 00:01:06,013 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.706370°N, 73.996997°W
+2025-05-16 00:01:17,306 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.706465°N, 73.997555°W
+2025-05-16 00:01:28,361 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.707385°N, 73.997767°W
+2025-05-16 00:01:44,433 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.707211°N, 73.997190°W
+2025-05-16 00:02:01,026 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.707000°N, 73.996220°W
+2025-05-16 00:02:12,412 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.706182°N, 73.995309°W
+2025-05-16 00:02:24,112 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.705610°N, 73.994986°W
+2025-05-16 00:02:34,574 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.705812°N, 73.995151°W
+2025-05-16 00:05:21,898 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.706836°N, 73.972020°W
+2025-05-16 00:05:21,993 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:05:21,993 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:05:21,993 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.706836°N, 73.972020°W
+2025-05-16 00:05:40,925 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.706289°N, 73.971792°W
+2025-05-16 00:05:56,657 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.706796°N, 73.971516°W
+2025-05-16 00:06:07,711 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.706991°N, 73.971021°W
+2025-05-16 00:06:14,913 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.707410°N, 73.971387°W
+2025-05-16 00:06:30,422 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.707569°N, 73.970586°W
+2025-05-16 00:06:46,399 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.706589°N, 73.971423°W
+2025-05-16 00:07:04,460 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.706825°N, 73.971883°W
+2025-05-16 00:07:17,455 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.706450°N, 73.971533°W
+2025-05-16 00:07:29,203 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.707011°N, 73.972490°W
+2025-05-16 00:07:36,100 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.707393°N, 73.973156°W
+2025-05-16 00:07:49,510 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.707725°N, 73.973804°W
+2025-05-16 00:08:01,267 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.706875°N, 73.973500°W
+2025-05-16 00:08:09,180 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.706548°N, 73.974027°W
+2025-05-16 00:08:19,251 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.706749°N, 73.974616°W
+2025-05-16 00:08:24,634 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.707676°N, 73.973815°W
+2025-05-16 00:08:39,031 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.707888°N, 73.973454°W
+2025-05-16 00:08:45,099 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.707116°N, 73.973504°W
+2025-05-16 00:08:51,705 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.707602°N, 73.974019°W
+2025-05-16 00:09:01,068 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.706942°N, 73.974363°W
+2025-05-16 00:09:09,518 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.707473°N, 73.974771°W
+2025-05-16 00:09:21,511 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.707081°N, 73.975654°W
+2025-05-16 00:09:36,149 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.707268°N, 73.976628°W
+2025-05-16 00:09:44,812 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.707785°N, 73.977444°W
+2025-05-16 00:09:56,394 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.707878°N, 73.976453°W
+2025-05-16 00:10:07,538 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.708277°N, 73.976141°W
+2025-05-16 00:10:13,451 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.708954°N, 73.975611°W
+2025-05-16 00:10:27,012 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.709596°N, 73.974948°W
+2025-05-16 00:10:45,370 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.708787°N, 73.975119°W
+2025-05-16 00:11:03,197 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.709351°N, 73.975570°W
+2025-05-16 00:11:13,147 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.708793°N, 73.975789°W
+2025-05-16 00:11:31,671 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.708544°N, 73.976016°W
+2025-05-16 00:11:48,274 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.708095°N, 73.975759°W
+2025-05-16 00:11:53,803 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.708244°N, 73.976592°W
+2025-05-16 00:12:09,291 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.707450°N, 73.976049°W
+2025-05-16 00:13:09,761 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.795104°N, 74.042137°W
+2025-05-16 00:13:10,043 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:13:10,043 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:13:10,044 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.795104°N, 74.042137°W
+2025-05-16 00:13:28,674 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.795272°N, 74.041322°W
+2025-05-16 00:13:40,534 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.795908°N, 74.041159°W
+2025-05-16 00:13:58,332 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.796392°N, 74.040869°W
+2025-05-16 00:14:08,678 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.797070°N, 74.040214°W
+2025-05-16 00:14:20,155 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.797424°N, 74.040495°W
+2025-05-16 00:14:29,339 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.798262°N, 74.041272°W
+2025-05-16 00:14:44,727 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.797426°N, 74.041612°W
+2025-05-16 00:14:59,882 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.796442°N, 74.041834°W
+2025-05-16 00:15:16,003 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.795830°N, 74.042805°W
+2025-05-16 00:15:33,520 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.796156°N, 74.043087°W
+2025-05-16 00:15:34,517 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.796075°N, 74.043683°W
+2025-05-16 00:18:17,937 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.716008°N, 73.980332°W
+2025-05-16 00:18:18,006 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:18:18,006 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:18:18,006 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.716008°N, 73.980332°W
+2025-05-16 00:18:34,208 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.715919°N, 73.980518°W
+2025-05-16 00:18:54,185 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.716472°N, 73.980119°W
+2025-05-16 00:18:56,113 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.716669°N, 73.980527°W
+2025-05-16 00:22:02,301 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.741506°N, 74.015873°W
+2025-05-16 00:22:02,402 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:22:02,403 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:22:02,403 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.741506°N, 74.015873°W
+2025-05-16 00:22:20,655 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.742377°N, 74.015046°W
+2025-05-16 00:22:38,989 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.743252°N, 74.016027°W
+2025-05-16 00:22:44,038 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.742454°N, 74.016979°W
+2025-05-16 00:22:49,381 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.742861°N, 74.016520°W
+2025-05-16 00:22:59,201 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.743804°N, 74.017452°W
+2025-05-16 00:23:16,377 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.743486°N, 74.016510°W
+2025-05-16 00:23:35,177 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.742960°N, 74.016150°W
+2025-05-16 00:23:36,660 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.743885°N, 74.016488°W
+2025-05-16 00:24:22,707 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.757572°N, 74.038653°W
+2025-05-16 00:24:22,793 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:24:22,793 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:24:22,793 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.757572°N, 74.038653°W
+2025-05-16 00:24:41,570 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.756669°N, 74.038250°W
+2025-05-16 00:24:51,607 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.756185°N, 74.039155°W
+2025-05-16 00:25:04,458 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.755723°N, 74.039906°W
+2025-05-16 00:25:12,971 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.755589°N, 74.040826°W
+2025-05-16 00:25:19,660 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.755296°N, 74.040140°W
+2025-05-16 00:25:33,715 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.755268°N, 74.040508°W
+2025-05-16 00:25:40,657 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.755901°N, 74.040246°W
+2025-05-16 00:25:57,473 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.755081°N, 74.039325°W
+2025-05-16 00:26:05,576 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.755624°N, 74.039820°W
+2025-05-16 00:26:21,945 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.754835°N, 74.039219°W
+2025-05-16 00:26:31,988 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.754524°N, 74.040003°W
+2025-05-16 00:26:48,057 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.753959°N, 74.039370°W
+2025-05-16 00:26:53,164 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.754958°N, 74.038651°W
+2025-05-16 00:26:58,271 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.755380°N, 74.039571°W
+2025-05-16 00:26:58,882 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.756150°N, 74.039495°W
+2025-05-16 00:28:44,260 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.745595°N, 73.982138°W
+2025-05-16 00:28:44,582 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:28:44,582 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:28:44,582 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.745595°N, 73.982138°W
+2025-05-16 00:29:01,044 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.745783°N, 73.982126°W
+2025-05-16 00:29:10,377 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.744965°N, 73.982080°W
+2025-05-16 00:29:18,667 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.744865°N, 73.982708°W
+2025-05-16 00:29:22,516 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.744821°N, 73.982648°W
+2025-05-16 00:33:50,126 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.739551°N, 74.002207°W
+2025-05-16 00:33:50,242 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:33:50,242 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:33:50,242 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.739551°N, 74.002207°W
+2025-05-16 00:34:07,932 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.739646°N, 74.002553°W
+2025-05-16 00:34:20,145 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.739283°N, 74.002714°W
+2025-05-16 00:35:22,038 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.707332°N, 73.987459°W
+2025-05-16 00:35:22,157 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 00:35:22,157 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 00:35:22,158 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.707332°N, 73.987459°W
+2025-05-16 00:35:35,780 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.708059°N, 73.988348°W
+2025-05-16 00:35:40,704 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.707459°N, 73.987964°W
+2025-05-16 09:43:05,797 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.795724°N, 73.992779°W
+2025-05-16 09:43:05,917 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 09:43:05,917 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 09:43:05,917 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.795724°N, 73.992779°W
+2025-05-16 09:43:17,867 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.795698°N, 73.992786°W
+2025-05-16 09:43:25,331 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.796077°N, 73.992619°W
+2025-05-16 10:00:03,275 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.718542°N, 74.043445°W
+2025-05-16 10:00:03,350 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:00:03,350 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:00:03,351 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.718542°N, 74.043445°W
+2025-05-16 10:00:11,772 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.719250°N, 74.044038°W
+2025-05-16 10:00:27,291 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.719247°N, 74.043823°W
+2025-05-16 10:00:43,437 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.718349°N, 74.043562°W
+2025-05-16 10:01:02,226 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.718594°N, 74.042681°W
+2025-05-16 10:01:20,151 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.717927°N, 74.041934°W
+2025-05-16 10:01:37,514 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.717016°N, 74.042105°W
+2025-05-16 10:01:53,956 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.716950°N, 74.041151°W
+2025-05-16 10:01:59,604 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.717831°N, 74.040893°W
+2025-05-16 10:02:11,033 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.717241°N, 74.041519°W
+2025-05-16 10:02:24,173 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.716886°N, 74.041518°W
+2025-05-16 10:02:32,196 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.716580°N, 74.041782°W
+2025-05-16 10:02:39,505 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.716789°N, 74.040822°W
+2025-05-16 10:02:55,428 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.716360°N, 74.040624°W
+2025-05-16 10:08:24,588 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.705130°N, 74.000124°W
+2025-05-16 10:08:24,658 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:08:24,658 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:08:24,658 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.705130°N, 74.000124°W
+2025-05-16 10:08:38,620 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.704721°N, 74.000054°W
+2025-05-16 10:08:50,368 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.704947°N, 73.999797°W
+2025-05-16 10:08:54,696 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.704672°N, 74.000465°W
+2025-05-16 10:14:26,666 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.751056°N, 73.958306°W
+2025-05-16 10:14:26,761 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:14:26,761 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:14:26,761 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.751056°N, 73.958306°W
+2025-05-16 10:14:36,878 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.751227°N, 73.957610°W
+2025-05-16 10:14:56,497 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.750972°N, 73.958505°W
+2025-05-16 10:15:08,766 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.750996°N, 73.959030°W
+2025-05-16 10:15:20,073 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.751305°N, 73.959292°W
+2025-05-16 10:15:31,667 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.751349°N, 73.960183°W
+2025-05-16 10:15:47,741 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.751001°N, 73.960405°W
+2025-05-16 10:16:04,736 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.751623°N, 73.959841°W
+2025-05-16 10:16:22,448 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.751997°N, 73.959573°W
+2025-05-16 10:16:41,721 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.751924°N, 73.960435°W
+2025-05-16 10:17:01,180 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.751261°N, 73.961423°W
+2025-05-16 10:17:07,396 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.751672°N, 73.960708°W
+2025-05-16 10:17:20,299 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.752159°N, 73.960175°W
+2025-05-16 10:17:32,816 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.751657°N, 73.960639°W
+2025-05-16 10:17:46,735 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.751212°N, 73.960210°W
+2025-05-16 10:17:53,545 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.751293°N, 73.960402°W
+2025-05-16 10:18:13,508 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.750700°N, 73.960644°W
+2025-05-16 10:18:27,264 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.751300°N, 73.961211°W
+2025-05-16 10:18:40,838 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.751440°N, 73.961919°W
+2025-05-16 10:19:00,233 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.752087°N, 73.962610°W
+2025-05-16 10:19:06,129 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.751305°N, 73.962180°W
+2025-05-16 10:19:54,097 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.718871°N, 74.013850°W
+2025-05-16 10:19:54,299 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:19:54,299 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:19:54,299 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.718871°N, 74.013850°W
+2025-05-16 10:20:04,398 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.718335°N, 74.014097°W
+2025-05-16 10:20:13,970 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.719233°N, 74.013169°W
+2025-05-16 10:22:13,099 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.748850°N, 74.029929°W
+2025-05-16 10:22:13,195 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:22:13,195 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:22:13,195 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.748850°N, 74.029929°W
+2025-05-16 10:22:21,884 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.748185°N, 74.029343°W
+2025-05-16 10:22:39,505 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.748655°N, 74.029342°W
+2025-05-16 10:22:51,687 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.747779°N, 74.029401°W
+2025-05-16 10:23:01,224 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.747636°N, 74.029653°W
+2025-05-16 10:23:19,871 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.748298°N, 74.030577°W
+2025-05-16 10:23:33,804 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.748603°N, 74.029956°W
+2025-05-16 10:23:47,490 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.748190°N, 74.030734°W
+2025-05-16 10:24:03,002 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.747240°N, 74.031453°W
+2025-05-16 10:24:11,961 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.746874°N, 74.030521°W
+2025-05-16 10:24:20,972 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.746496°N, 74.030905°W
+2025-05-16 10:24:30,476 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.746724°N, 74.030421°W
+2025-05-16 10:24:40,745 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.747040°N, 74.030788°W
+2025-05-16 10:24:50,527 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.746188°N, 74.030930°W
+2025-05-16 10:25:00,313 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.745373°N, 74.029989°W
+2025-05-16 10:25:08,065 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.745425°N, 74.029051°W
+2025-05-16 10:25:25,542 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.744929°N, 74.029715°W
+2025-05-16 10:25:32,584 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.745445°N, 74.029849°W
+2025-05-16 10:25:46,108 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.745980°N, 74.029063°W
+2025-05-16 10:26:05,224 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.745069°N, 74.029288°W
+2025-05-16 10:26:23,264 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.745681°N, 74.028771°W
+2025-05-16 10:26:34,930 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.744846°N, 74.028153°W
+2025-05-16 10:26:42,541 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.745791°N, 74.028604°W
+2025-05-16 10:26:53,343 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.746717°N, 74.028280°W
+2025-05-16 10:27:08,090 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.746684°N, 74.028654°W
+2025-05-16 10:27:10,802 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.747017°N, 74.028667°W
+2025-05-16 10:28:21,416 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.712361°N, 74.013906°W
+2025-05-16 10:28:21,534 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:28:21,534 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:28:21,535 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.712361°N, 74.013906°W
+2025-05-16 10:28:21,535 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:28:40,753 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.712026°N, 74.014153°W
+2025-05-16 10:28:40,754 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:28:59,452 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.711478°N, 74.014078°W
+2025-05-16 10:28:59,452 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:29:06,543 [INFO] spy.SPY012: Enviando alerta: ALTA - SECUESTRO desde 40.711815°N, 74.014405°W
+2025-05-16 10:29:06,543 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:29:12,934 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.711621°N, 74.014017°W
+2025-05-16 10:29:12,934 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:29:32,707 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.711897°N, 74.014097°W
+2025-05-16 10:29:32,707 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:29:40,435 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.711262°N, 74.013464°W
+2025-05-16 10:29:40,436 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:29:50,582 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.712161°N, 74.012879°W
+2025-05-16 10:29:50,582 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:30:06,866 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.711868°N, 74.013251°W
+2025-05-16 10:30:06,867 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:30:22,518 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.712041°N, 74.013715°W
+2025-05-16 10:30:22,525 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:36:29,108 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.761947°N, 73.964011°W
+2025-05-16 10:36:29,283 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:36:29,283 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:36:29,284 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.761947°N, 73.964011°W
+2025-05-16 10:36:29,287 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:36:40,178 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.761385°N, 73.963132°W
+2025-05-16 10:36:40,179 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:36:45,929 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.761896°N, 73.962963°W
+2025-05-16 10:36:45,929 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:36:58,777 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.761052°N, 73.962199°W
+2025-05-16 10:36:58,777 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:37:17,632 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.760871°N, 73.962440°W
+2025-05-16 10:37:17,632 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:37:26,095 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.761852°N, 73.962338°W
+2025-05-16 10:37:26,095 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:37:37,100 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.762380°N, 73.962789°W
+2025-05-16 10:37:37,100 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:37:49,393 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.762072°N, 73.962091°W
+2025-05-16 10:37:49,393 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:38:08,690 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.761751°N, 73.962762°W
+2025-05-16 10:38:08,691 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:38:20,483 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.761458°N, 73.961821°W
+2025-05-16 10:38:20,483 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:38:36,261 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.762057°N, 73.962318°W
+2025-05-16 10:38:36,261 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:38:49,160 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.761895°N, 73.962113°W
+2025-05-16 10:38:49,162 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:39:56,347 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.795812°N, 73.972542°W
+2025-05-16 10:39:56,474 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:39:56,474 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:39:56,474 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.795812°N, 73.972542°W
+2025-05-16 10:39:56,475 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:40:04,962 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.794931°N, 73.972574°W
+2025-05-16 10:40:04,962 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:40:05,546 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.793954°N, 73.971750°W
+2025-05-16 10:40:05,547 [ERROR] spy.SPY012: Error al enviar la alerta: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 122, in publish_message
+    serialized_message = json.dumps(message).encode("utf-8")
+                         ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\alexb\AppData\Local\Programs\Python\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bytes is not JSON serializable
+2025-05-16 10:44:24,217 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.791997°N, 74.000502°W
+2025-05-16 10:44:24,318 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:44:24,318 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:44:24,318 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.791997°N, 74.000502°W
+2025-05-16 10:44:24,318 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:44:40,466 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.791987°N, 74.001360°W
+2025-05-16 10:44:40,466 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:44:59,084 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - AMENAZA_BOMBA desde 40.791950°N, 74.002308°W
+2025-05-16 10:44:59,084 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:45:15,634 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.791063°N, 74.002167°W
+2025-05-16 10:45:15,634 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:45:20,670 [INFO] spy.SPY012: Enviando alerta: MEDIA - VIGILANCIA desde 40.790838°N, 74.002545°W
+2025-05-16 10:45:20,670 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:45:35,166 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.790824°N, 74.003463°W
+2025-05-16 10:45:35,166 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:45:41,057 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.791356°N, 74.003080°W
+2025-05-16 10:45:41,057 [ERROR] spy.SPY012: Error al enviar la alerta: 'bytes' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\spy.py", line 114, in generate_alert
+    self.comm_client.publish_message(json_message, routing_key='task.broadcast')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'to_json'
+2025-05-16 10:47:57,434 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.732854°N, 74.040021°W
+2025-05-16 10:47:57,610 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:47:57,610 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:47:57,610 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.732854°N, 74.040021°W
+2025-05-16 10:48:10,408 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.733068°N, 74.039738°W
+2025-05-16 10:48:15,845 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.732190°N, 74.040050°W
+2025-05-16 10:48:29,585 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.731273°N, 74.039852°W
+2025-05-16 10:48:46,586 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.731518°N, 74.039373°W
+2025-05-16 10:48:58,361 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.730782°N, 74.039448°W
+2025-05-16 10:49:16,380 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.731276°N, 74.038756°W
+2025-05-16 10:49:27,364 [INFO] spy.SPY012: Enviando alerta: BAJA - SECUESTRO desde 40.732019°N, 74.038499°W
+2025-05-16 10:49:42,141 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.731651°N, 74.038890°W
+2025-05-16 10:49:59,984 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.732536°N, 74.039262°W
+2025-05-16 10:50:05,966 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.733014°N, 74.039546°W
+2025-05-16 10:50:21,937 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.733777°N, 74.040305°W
+2025-05-16 10:50:30,451 [INFO] spy.SPY012: Enviando alerta: BAJA - VIGILANCIA desde 40.734586°N, 74.041239°W
+2025-05-16 10:50:45,841 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.733995°N, 74.040467°W
+2025-05-16 10:50:50,900 [INFO] spy.SPY012: Enviando alerta: BAJA - ROBO desde 40.734449°N, 74.040759°W
+2025-05-16 10:51:09,429 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.734090°N, 74.040692°W
+2025-05-16 10:51:21,863 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.734700°N, 74.041379°W
+2025-05-16 10:51:36,408 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - ROBO desde 40.735327°N, 74.041505°W
+2025-05-16 10:51:43,803 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.735607°N, 74.041530°W
+2025-05-16 10:51:56,956 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.736079°N, 74.041564°W
+2025-05-16 10:52:04,218 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.735202°N, 74.042529°W
+2025-05-16 10:52:09,732 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.735861°N, 74.042545°W
+2025-05-16 10:53:21,665 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.788354°N, 73.966618°W
+2025-05-16 10:53:21,904 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:53:21,905 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:53:21,905 [INFO] spy.SPY012: Enviando alerta: MEDIA - SECUESTRO desde 40.788354°N, 73.966618°W
+2025-05-16 10:53:30,053 [INFO] spy.SPY012: Enviando alerta: MEDIA - AMENAZA_BOMBA desde 40.787378°N, 73.966213°W
+2025-05-16 10:55:36,947 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.790841°N, 73.983377°W
+2025-05-16 10:55:37,116 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 10:55:37,116 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 10:55:37,117 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.790841°N, 73.983377°W
+2025-05-16 10:55:48,460 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.790637°N, 73.982969°W
+2025-05-16 10:56:04,707 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.791412°N, 73.982115°W
+2025-05-16 10:56:10,731 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.791595°N, 73.981535°W
+2025-05-16 10:56:16,212 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.792465°N, 73.981203°W
+2025-05-16 14:21:43,994 [INFO] spy.SPY012: Espía SPY012 inicializado en posición 40.797717°N, 73.984073°W
+2025-05-16 14:21:44,466 [INFO] spy.SPY012: Conectado al servidor usando rabbitmq
+2025-05-16 14:21:44,467 [INFO] spy.SPY012: Espía SPY012 comenzando a enviar alertas
+2025-05-16 14:21:44,467 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - SECUESTRO desde 40.797717°N, 73.984073°W
+2025-05-16 14:21:53,964 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.797334°N, 73.984381°W
+2025-05-16 14:22:01,679 [INFO] spy.SPY012: Enviando alerta: ALTA - AMENAZA_BOMBA desde 40.797389°N, 73.983669°W
+2025-05-16 14:22:10,739 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.798379°N, 73.984462°W
+2025-05-16 14:22:29,726 [INFO] spy.SPY012: Enviando alerta: ALTA - ROBO desde 40.798392°N, 73.983532°W
+2025-05-16 14:22:36,744 [INFO] spy.SPY012: Enviando alerta: BAJA - AMENAZA_BOMBA desde 40.797781°N, 73.984387°W
+2025-05-16 14:22:51,720 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.798766°N, 73.985316°W
+2025-05-16 14:23:03,474 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.799350°N, 73.985912°W
+2025-05-16 14:23:12,672 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.799108°N, 73.985412°W
+2025-05-16 14:23:17,792 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - VIGILANCIA desde 40.798236°N, 73.985476°W
+2025-05-16 14:23:24,332 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.798573°N, 73.985416°W
+2025-05-16 14:23:39,903 [INFO] spy.SPY012: Enviando alerta: ALTA - VIGILANCIA desde 40.798921°N, 73.985437°W
+2025-05-16 14:23:59,128 [INFO] spy.SPY012: Enviando alerta: BAJA - INTRUSIÓN desde 40.799613°N, 73.986378°W
+2025-05-16 14:24:14,580 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.799399°N, 73.985866°W
+2025-05-16 14:24:31,768 [INFO] spy.SPY012: Enviando alerta: MEDIA - INTRUSIÓN desde 40.798485°N, 73.986054°W
+2025-05-16 14:24:45,209 [INFO] spy.SPY012: Enviando alerta: MEDIA - ROBO desde 40.797621°N, 73.986994°W
+2025-05-16 14:25:01,159 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.797060°N, 73.986387°W
+2025-05-16 14:25:15,893 [INFO] spy.SPY012: Enviando alerta: ALTA - INTRUSIÓN desde 40.797040°N, 73.986253°W
+2025-05-16 14:25:20,094 [INFO] spy.SPY012: Enviando alerta: CRÍTICA - INTRUSIÓN desde 40.797504°N, 73.986636°W

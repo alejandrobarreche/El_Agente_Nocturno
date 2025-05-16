@@ -114,8 +114,13 @@ class RabbitMQConsumer:
         """
         try:
             from common.message import create_message_from_json
-            json_str = body.decode("utf-8")  # ← aseguramos decodificación como texto
-            message = create_message_from_json(json_str)
+            try:
+                json_str = body.decode("utf-8")  # Intentar decodificar como UTF-8
+                message = create_message_from_json(json_str)
+            except UnicodeDecodeError:
+                logger.error("El mensaje no está en formato UTF-8. Verifica el formato del mensaje.")
+                channel.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
+                return
 
             logger.debug(f"Mensaje recibido: {message}, Routing Key: {method.routing_key}")
 

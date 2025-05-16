@@ -236,3 +236,1465 @@ TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'callb
 2025-05-15 21:35:02,266 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
 2025-05-15 21:39:40,508 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.734364°N, 73.997981°W
 2025-05-15 21:39:40,761 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:51:34,692 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.782616°N, 74.005960°W
+2025-05-15 21:51:34,798 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: name 'RabbitMQConsumer' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 81, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ^^^^^^^^^^^^^^^^
+NameError: name 'RabbitMQConsumer' is not defined
+2025-05-15 21:51:34,803 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: name 'RabbitMQConsumer' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 285, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 81, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ^^^^^^^^^^^^^^^^
+NameError: name 'RabbitMQConsumer' is not defined
+2025-05-15 21:51:34,808 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 21:51:34,814 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-15 21:51:34,814 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 21:53:41,196 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.735728°N, 74.003098°W
+2025-05-15 21:53:41,385 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 21:57:51,837 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.749080°N, 73.995649°W
+2025-05-15 21:57:51,949 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 22:07:34,623 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.799316°N, 73.961470°W
+2025-05-15 22:07:34,847 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 22:25:37,971 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.756828°N, 73.996228°W
+2025-05-15 22:25:38,307 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 22:27:41,864 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.756973°N, 74.021934°W
+2025-05-15 22:27:42,260 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 22:31:41,694 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.727057°N, 73.952028°W
+2025-05-15 22:31:41,885 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 22:48:41,271 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.796595°N, 74.032017°W
+2025-05-15 22:48:41,387 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 22:54:56,862 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.719811°N, 73.963895°W
+2025-05-15 22:54:57,161 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:04:41,913 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.719461°N, 74.043245°W
+2025-05-15 23:04:42,255 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:10:09,635 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.716563°N, 73.975148°W
+2025-05-15 23:10:10,043 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 61, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        auto_ack=False  # Importante: no confirmar automáticamente
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+2025-05-15 23:10:10,044 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 253, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 61, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        auto_ack=False  # Importante: no confirmar automáticamente
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+2025-05-15 23:10:10,046 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 23:10:10,053 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-15 23:10:10,053 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 23:25:16,908 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.788284°N, 74.046604°W
+2025-05-15 23:25:17,117 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 61, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        auto_ack=False  # Importante: no confirmar automáticamente
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+2025-05-15 23:25:17,119 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 253, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 61, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        auto_ack=False  # Importante: no confirmar automáticamente
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+2025-05-15 23:25:17,121 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 23:25:17,128 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-15 23:25:17,128 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 23:30:58,520 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.750922°N, 73.952150°W
+2025-05-15 23:30:58,619 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 61, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        auto_ack=False  # Importante: no confirmar automáticamente
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+2025-05-15 23:30:58,621 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 253, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 61, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        auto_ack=False  # Importante: no confirmar automáticamente
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'auto_ack'
+2025-05-15 23:30:58,622 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 23:30:58,628 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-15 23:30:58,628 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 23:32:43,132 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.721046°N, 74.000262°W
+2025-05-15 23:32:43,222 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:32:43,222 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: 'NoneType' object has no attribute 'basic_qos'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 257, in run
+    self.comm_client.channel.basic_qos(prefetch_count=1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'basic_qos'
+2025-05-15 23:32:43,227 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-15 23:32:43,227 [INFO] night_agent.AGENT001: Desconectado del servidor
+2025-05-15 23:32:43,230 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-15 23:32:43,230 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-15 23:34:55,419 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.744167°N, 74.021363°W
+2025-05-15 23:34:55,492 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:36:18,831 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.763455°N, 74.000931°W
+2025-05-15 23:36:19,012 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:38:13,600 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.711579°N, 73.995886°W
+2025-05-15 23:38:13,817 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:40:03,229 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.754594°N, 73.958951°W
+2025-05-15 23:40:03,429 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:43:10,784 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.763932°N, 73.997850°W
+2025-05-15 23:43:10,894 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:46:38,713 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.779847°N, 74.039267°W
+2025-05-15 23:46:39,016 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:50:01,219 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.726020°N, 73.957186°W
+2025-05-15 23:50:01,482 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:55:36,065 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.789751°N, 74.049095°W
+2025-05-15 23:55:36,270 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-15 23:59:48,275 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.761309°N, 74.025343°W
+2025-05-15 23:59:48,528 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:05:20,777 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.709565°N, 74.023075°W
+2025-05-16 00:05:20,886 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:13:09,779 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.753634°N, 74.035440°W
+2025-05-16 00:13:10,004 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:13:10,004 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: 'NoneType' object has no attribute 'start_consuming'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 245, in run
+    self.comm_client.start_consuming(callback=self.handle_task)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'start_consuming'
+2025-05-16 00:13:10,006 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-16 00:13:10,013 [INFO] night_agent.AGENT001: Cerrada conexión del publisher
+2025-05-16 00:13:10,013 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-16 00:18:16,599 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.741114°N, 73.968618°W
+2025-05-16 00:18:16,866 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:22:01,410 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.723414°N, 73.985657°W
+2025-05-16 00:22:01,779 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:24:21,932 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.774624°N, 73.983726°W
+2025-05-16 00:24:22,237 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:28:44,310 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.770259°N, 74.006262°W
+2025-05-16 00:28:44,604 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:28:44,612 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 96, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 00:33:49,645 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.784848°N, 73.996179°W
+2025-05-16 00:33:49,887 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:33:49,914 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 96, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 00:35:21,138 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.746381°N, 73.957618°W
+2025-05-16 00:35:21,589 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 00:35:21,596 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 96, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 09:43:05,101 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.783838°N, 73.954083°W
+2025-05-16 09:43:05,376 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 09:43:05,393 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 95, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 10:00:02,480 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.740725°N, 73.977413°W
+2025-05-16 10:00:02,790 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:00:02,796 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 94, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 10:08:23,898 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.762554°N, 74.012935°W
+2025-05-16 10:08:24,114 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:08:24,119 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 94, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 10:14:26,161 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.754289°N, 74.023318°W
+2025-05-16 10:14:26,162 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 50, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        binding_keys=['task.broadcast']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+2025-05-16 10:14:26,164 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 255, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 50, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        binding_keys=['task.broadcast']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+2025-05-16 10:14:26,165 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-16 10:14:26,165 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-16 10:19:54,667 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.761327°N, 73.979715°W
+2025-05-16 10:19:54,667 [ERROR] night_agent.AGENT001: Error al conectar con el servidor: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 50, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        binding_keys=['task.broadcast']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+2025-05-16 10:19:54,669 [ERROR] night_agent.AGENT001: Error en el agente AGENT001: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 262, in run
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 50, in connect
+    self.comm_client = RabbitMQConsumer(
+                       ~~~~~~~~~~~~~~~~^
+        host=config.RABBITMQ_HOST,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        binding_keys=['task.broadcast']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: RabbitMQConsumer.__init__() got an unexpected keyword argument 'on_message_callback'
+2025-05-16 10:19:54,670 [INFO] night_agent.AGENT001: Deteniendo agente AGENT001
+2025-05-16 10:19:54,670 [INFO] night_agent.AGENT001: Agente AGENT001 finalizado
+2025-05-16 10:22:12,689 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.743116°N, 74.016105°W
+2025-05-16 10:22:12,846 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:22:12,846 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 117, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 10:28:21,309 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.763345°N, 73.957331°W
+2025-05-16 10:28:21,464 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:28:21,465 [ERROR] night_agent.AGENT001: Error al enviar estado: 'NoneType' object has no attribute 'publish_message'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 118, in send_status_update
+    self.publisher.publish_message(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'publish_message'
+2025-05-16 10:36:28,826 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.736960°N, 74.033071°W
+2025-05-16 10:36:29,179 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:36:29,180 [ERROR] night_agent.AGENT001: Error al enviar estado: cannot access local variable 'properties' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 151, in send_status_update
+    self.publisher.publish_message(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        message,
+        ^^^^^^^^
+        routing_key='task.broadcast'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 135, in publish_message
+    properties=properties
+               ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'properties' where it is not associated with a value
+2025-05-16 10:39:56,139 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.757755°N, 73.991527°W
+2025-05-16 10:39:56,530 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:44:23,384 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.715444°N, 73.972027°W
+2025-05-16 10:44:23,743 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:47:57,378 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.709099°N, 73.982132°W
+2025-05-16 10:47:57,698 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:47:57,715 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:47:57,716 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:05,317 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:05,318 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:12,825 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:12,826 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:17,961 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:17,962 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:24,467 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:24,468 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:32,576 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:32,577 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:36,644 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:36,645 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:45,406 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:45,406 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:51,020 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:51,021 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:48:57,440 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:48:57,441 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:04,180 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:04,181 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:10,341 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:10,342 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:15,881 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:15,881 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:21,048 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:21,048 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:27,366 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:27,367 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:35,025 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:35,026 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:41,567 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:41,568 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:46,257 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:46,258 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:55,125 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:55,125 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:49:59,987 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:49:59,987 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:05,968 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:05,968 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:13,979 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:13,979 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:20,591 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:20,592 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:28,155 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:28,156 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:31,799 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:31,800 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:40,174 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:40,175 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:46,362 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:46,362 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:50,903 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:50,904 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:50:50,916 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:50:50,919 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:00,578 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:00,579 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:08,719 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:08,719 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:14,947 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:14,947 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:21,865 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:21,866 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:27,530 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:27,531 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:32,000 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:32,001 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:38,160 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:38,161 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:44,613 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:44,614 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:51,815 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:51,815 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:51:58,870 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:51:58,871 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:52:04,220 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:52:04,222 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:52:12,249 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:52:12,250 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:52:16,815 [ERROR] night_agent.AGENT001: Error procesando tarea: Message.__init__() got an unexpected keyword argument 'position'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+2025-05-16 10:52:16,816 [ERROR] night_agent.AGENT001: Error al reenviar la tarea: 'str' object has no attribute 'to_json'
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 186, in handle_task
+    task = Message.from_json(task_json)
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\common\message.py", line 27, in from_json
+    return cls(**data)
+TypeError: Message.__init__() got an unexpected keyword argument 'position'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 226, in requeue_task
+    self.publisher.publish_message(task_json, routing_key="tasks.unprocessed")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\communication\rabbitmq\publisher.py", line 120, in publish_message
+    serialized_message = message.to_json().encode("utf-8")
+                         ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to_json'
+2025-05-16 10:53:21,608 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.784683°N, 73.953817°W
+2025-05-16 10:53:21,917 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:53:21,950 [ERROR] night_agent.AGENT001: Error procesando tarea: name 'create_message_from_json' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 129, in handle_task
+    task = create_message_from_json(task_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_message_from_json' is not defined
+2025-05-16 10:53:28,064 [ERROR] night_agent.AGENT001: Error procesando tarea: name 'create_message_from_json' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 129, in handle_task
+    task = create_message_from_json(task_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_message_from_json' is not defined
+2025-05-16 10:53:30,060 [ERROR] night_agent.AGENT001: Error procesando tarea: name 'create_message_from_json' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 129, in handle_task
+    task = create_message_from_json(task_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_message_from_json' is not defined
+2025-05-16 10:53:30,070 [ERROR] night_agent.AGENT001: Error procesando tarea: name 'create_message_from_json' is not defined
+Traceback (most recent call last):
+  File "C:\Users\alexb\Documents\UAX\2_Ing\Metodos Numericos\ULab\PythonProject\agents\night_agent.py", line 129, in handle_task
+    task = create_message_from_json(task_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_message_from_json' is not defined
+2025-05-16 10:55:36,881 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.736127°N, 73.963518°W
+2025-05-16 10:55:37,150 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 10:55:37,164 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='ec0b74ab-db7a-437d-aa1b-4a33e69e61a1', timestamp=1747385737.1169229, message_type='ALERT', sender_id='SPY012', position=(40.790841, -73.983377), emergency_level='ALTA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 10:55:42,811 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='2e232b35-5dce-4ce7-a2a3-1f86d90c8a58', timestamp=1747385742.8088827, message_type='ALERT', sender_id='SPY015', position=(40.74932966311686, -73.98614234291018), emergency_level='MEDIA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 10:55:51,528 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='834a0140-2091-4d67-8a87-ae821f8c31ac', timestamp=1747385751.526607, message_type='ALERT', sender_id='SPY016', position=(40.72580775130053, -73.97656794675551), emergency_level='MEDIA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 10:55:56,636 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='4a1e9e6a-e6fa-4db2-b465-650d611ff318', timestamp=1747385756.6340206, message_type='ALERT', sender_id='SPY014', position=(40.712095850359134, -74.02681349248127), emergency_level='ALTA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 10:56:03,208 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='3e695921-f8f8-4ade-95c0-27b0fbb128f0', timestamp=1747385763.2059956, message_type='ALERT', sender_id='SPY020', position=(40.75715755004767, -74.009645621124), emergency_level='MEDIA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 10:56:09,016 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='570ca28a-ef05-4cbf-8c02-a154c2d4f355', timestamp=1747385769.0139618, message_type='ALERT', sender_id='SPY016', position=(40.72566947901978, -73.97624801194381), emergency_level='MEDIA', emergency_type='SECUESTRO', description='')
+2025-05-16 10:56:16,096 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='be938629-8206-4e7f-b6c1-a2450bbb2212', timestamp=1747385776.094513, message_type='ALERT', sender_id='SPY014', position=(40.71044433806421, -74.02807642154656), emergency_level='CRÍTICA', emergency_type='ROBO', description='')
+2025-05-16 10:56:16,222 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='795db0f9-f306-4d96-801e-0acf582ca056', timestamp=1747385776.2128255, message_type='ALERT', sender_id='SPY012', position=(40.79246469306679, -73.98120273686963), emergency_level='ALTA', emergency_type='ROBO', description='')
+2025-05-16 14:21:44,364 [INFO] night_agent.AGENT001: Agente AGENT001 inicializado en posición 40.769822°N, 73.995997°W
+2025-05-16 14:21:44,836 [INFO] night_agent.AGENT001: Conectado al servidor usando rabbitmq
+2025-05-16 14:21:45,105 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='444e626b-ace7-49e3-a49b-faca548cd18e', timestamp=1747398105.0479627, message_type='ALERT', sender_id='SPY002', position=(40.702104, -73.983241), emergency_level='CRÍTICA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:21:45,325 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='bb8b6861-f0fd-45d0-85be-2b6ca4f53ae4', timestamp=1747398105.2747076, message_type='ALERT', sender_id='SPY007', position=(40.73352, -73.969238), emergency_level='BAJA', emergency_type='ROBO', description='')
+2025-05-16 14:21:53,969 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='8d578497-9d58-4e60-b62d-ca3b829fb955', timestamp=1747398113.9647284, message_type='ALERT', sender_id='SPY012', position=(40.79733401013852, -73.98438141449178), emergency_level='ALTA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:22:01,422 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='b4e6a087-eff4-46c8-9b60-c4ddf13b7e4f', timestamp=1747398121.4176412, message_type='ALERT', sender_id='SPY002', position=(40.70240467006051, -73.98238047424066), emergency_level='MEDIA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:22:05,673 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='20017b84-d848-4056-8588-948ec1e1430a', timestamp=1747398125.6680872, message_type='ALERT', sender_id='SPY008', position=(40.79440789177156, -73.99453971003071), emergency_level='CRÍTICA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:22:11,528 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='2f7befd9-354f-42a9-ae71-c5179f3f6695', timestamp=1747398131.523954, message_type='ALERT', sender_id='SPY004', position=(40.73271021547892, -73.98550087663973), emergency_level='CRÍTICA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:22:18,609 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='69ddf193-02bc-4c6b-b81a-903415095404', timestamp=1747398138.604622, message_type='ALERT', sender_id='SPY008', position=(40.794734086618014, -73.99409716181306), emergency_level='ALTA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:22:23,662 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='82b1da0e-6823-4559-aeed-0468b531cb46', timestamp=1747398143.6579492, message_type='ALERT', sender_id='SPY007', position=(40.734377123997014, -73.96933637113176), emergency_level='BAJA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:22:30,253 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='7197b389-ffd6-4d6c-97f1-f652746f0b4d', timestamp=1747398150.2491527, message_type='ALERT', sender_id='SPY007', position=(40.73414007331707, -73.96898068964529), emergency_level='BAJA', emergency_type='VIGILANCIA', description='')
+2025-05-16 14:22:36,289 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='5f2b4a0b-7c28-4aee-b63c-9d28e5b27d78', timestamp=1747398156.2855859, message_type='ALERT', sender_id='SPY016', position=(40.70416390704049, -73.9516079063327), emergency_level='BAJA', emergency_type='VIGILANCIA', description='')
+2025-05-16 14:22:40,248 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='f9ffe395-3f2c-4ccc-ad16-eddcc20d823b', timestamp=1747398160.2439277, message_type='ALERT', sender_id='SPY019', position=(40.71798617060199, -74.02354370377424), emergency_level='BAJA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:22:47,626 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='593762fe-db93-4cfb-80fe-b2c458f61705', timestamp=1747398167.6222734, message_type='ALERT', sender_id='SPY011', position=(40.78068085854095, -73.98941517013908), emergency_level='CRÍTICA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:22:55,694 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='f20f1e1e-1c9c-4de8-b5bd-7c0093f1f5a8', timestamp=1747398175.6846423, message_type='ALERT', sender_id='SPY001', position=(40.78125453497138, -74.01011971994579), emergency_level='ALTA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:23:01,127 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='b2820312-9969-42a5-aa98-f33efffbc71c', timestamp=1747398181.123103, message_type='ALERT', sender_id='SPY019', position=(40.71792658775311, -74.02394305197674), emergency_level='MEDIA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:23:09,944 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='6358c06c-8846-49f9-852b-c67c0f832794', timestamp=1747398189.940703, message_type='ALERT', sender_id='SPY016', position=(40.70480783065781, -73.9529254184203), emergency_level='MEDIA', emergency_type='VIGILANCIA', description='')
+2025-05-16 14:23:13,000 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='debeb0ac-dc99-4a40-83aa-2996a0c90b8e', timestamp=1747398192.9951966, message_type='ALERT', sender_id='SPY007', position=(40.73538058786481, -73.96977527749375), emergency_level='CRÍTICA', emergency_type='ROBO', description='')
+2025-05-16 14:23:18,824 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='ff83bcdb-dcd6-42fc-9b29-c476d8961fe8', timestamp=1747398198.8196986, message_type='ALERT', sender_id='SPY011', position=(40.78192874154328, -73.99004047664678), emergency_level='ALTA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:23:26,611 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='efee613c-80db-43ef-abff-fffdb292957f', timestamp=1747398206.607171, message_type='ALERT', sender_id='SPY001', position=(40.7804801496791, -74.00962172874564), emergency_level='ALTA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:23:32,002 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='ec96cc0a-f586-458c-812a-1a1fdb28a2d7', timestamp=1747398211.9950814, message_type='ALERT', sender_id='SPY002', position=(40.70288610602522, -73.98452857134231), emergency_level='CRÍTICA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:23:39,150 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='6f91c6d5-6676-460a-8ce4-cee0862f0168', timestamp=1747398219.1462274, message_type='ALERT', sender_id='SPY015', position=(40.71737930923606, -73.97223750259198), emergency_level='BAJA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:23:45,506 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='cea80900-fef4-4607-9e04-7d92369f3135', timestamp=1747398225.5025346, message_type='ALERT', sender_id='SPY001', position=(40.781007864458296, -74.00882183340416), emergency_level='CRÍTICA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:23:50,729 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='09652093-e9ba-4c4e-b584-cd1ddc619b4d', timestamp=1747398230.7256675, message_type='ALERT', sender_id='SPY017', position=(40.752789139384596, -74.02003387500841), emergency_level='BAJA', emergency_type='ROBO', description='')
+2025-05-16 14:23:58,082 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='05253c77-3f07-47b2-891f-dc064bf867fd', timestamp=1747398238.077866, message_type='ALERT', sender_id='SPY008', position=(40.79339034739096, -73.99425166125087), emergency_level='BAJA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:24:03,213 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='84658dae-9311-4449-ac0c-aa358b11ebc8', timestamp=1747398243.2094305, message_type='ALERT', sender_id='SPY002', position=(40.70122204707459, -73.98334290846347), emergency_level='CRÍTICA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:24:10,050 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='933dbae6-c7ae-402b-9d1f-0ab4a996a231', timestamp=1747398250.0464923, message_type='ALERT', sender_id='SPY011', position=(40.78162316411545, -73.99221851999725), emergency_level='ALTA', emergency_type='ROBO', description='')
+2025-05-16 14:24:17,354 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='91d9b6ec-f5ac-4618-983b-5b2b1dad80ef', timestamp=1747398257.3503487, message_type='ALERT', sender_id='SPY017', position=(40.75220402509677, -74.01806863524418), emergency_level='ALTA', emergency_type='ROBO', description='')
+2025-05-16 14:24:22,584 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='4a2853dd-e5a6-4d69-a9bc-d59c32dab2ba', timestamp=1747398262.5803397, message_type='ALERT', sender_id='SPY003', position=(40.711301329257545, -73.96494200707647), emergency_level='BAJA', emergency_type='VIGILANCIA', description='')
+2025-05-16 14:24:31,036 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='f59f7b5d-deeb-4310-a872-822f5860c9f6', timestamp=1747398271.0322816, message_type='ALERT', sender_id='SPY016', position=(40.70261369624757, -73.95532230295929), emergency_level='CRÍTICA', emergency_type='INTRUSIÓN', description='')
+2025-05-16 14:24:36,059 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='68f7dfbd-d682-4a72-9795-59aab346542b', timestamp=1747398276.0558977, message_type='ALERT', sender_id='SPY017', position=(40.75220312106959, -74.01846378126042), emergency_level='CRÍTICA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:24:43,505 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='3f058e03-ec30-4a80-821a-ba73e07971ae', timestamp=1747398283.500347, message_type='ALERT', sender_id='SPY001', position=(40.78434699883214, -74.0103567057036), emergency_level='CRÍTICA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:24:46,719 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='ca50b653-146c-411f-9f78-29be6f8bdd50', timestamp=1747398286.714672, message_type='ALERT', sender_id='SPY002', position=(40.70190638396503, -73.98229583498201), emergency_level='CRÍTICA', emergency_type='VIGILANCIA', description='')
+2025-05-16 14:24:55,130 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='be14532f-4818-4da3-ab1f-f34ed05cd71c', timestamp=1747398295.125852, message_type='ALERT', sender_id='SPY017', position=(40.752486030151445, -74.01899491555939), emergency_level='CRÍTICA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:25:01,735 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='fb80260c-e2b6-456a-bc83-6381e102d2ae', timestamp=1747398301.7300458, message_type='ALERT', sender_id='SPY006', position=(40.70987288669996, -73.99666835811189), emergency_level='ALTA', emergency_type='ROBO', description='')
+2025-05-16 14:25:06,158 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='3b95d583-5b8d-4fa9-8f31-30a04c1db0c7', timestamp=1747398306.1545928, message_type='ALERT', sender_id='SPY011', position=(40.78140622418479, -73.99177277860589), emergency_level='CRÍTICA', emergency_type='AMENAZA_BOMBA', description='')
+2025-05-16 14:25:12,725 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='950b9717-09d5-4027-b042-fe447771bb35', timestamp=1747398312.7203095, message_type='ALERT', sender_id='SPY017', position=(40.75334307394305, -74.01843544496734), emergency_level='ALTA', emergency_type='VIGILANCIA', description='')
+2025-05-16 14:25:18,068 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='9a17ffdc-ed02-4cc6-b290-00294adb0ee9', timestamp=1747398318.0641475, message_type='ALERT', sender_id='SPY009', position=(40.777052845481904, -73.98175734992827), emergency_level='ALTA', emergency_type='SECUESTRO', description='')
+2025-05-16 14:25:20,097 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='763f58fd-0b3c-4f88-a79d-2b9533119b47', timestamp=1747398320.0907223, message_type='ALERT', sender_id='SPY005', position=(40.70670672982592, -73.96707195787242), emergency_level='BAJA', emergency_type='ROBO', description='')
+2025-05-16 14:25:20,106 [INFO] night_agent.AGENT001: Tarea recibida: AlertMessage(message_id='6fb666fd-0655-4d06-99e7-15615c8a5d4b', timestamp=1747398320.0960445, message_type='ALERT', sender_id='SPY002', position=(40.70279132186395, -73.98188883367898), emergency_level='BAJA', emergency_type='SECUESTRO', description='')

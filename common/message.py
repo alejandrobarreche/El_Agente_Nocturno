@@ -13,52 +13,39 @@ from common.constants import MessageType
 
 @dataclass
 class Message:
-    """Clase base para todos los mensajes del sistema"""
     message_id: str = field(default_factory=lambda: str(uuid.uuid4()))
     timestamp: float = field(default_factory=time.time)
     message_type: str = field(default=MessageType.GENERIC)
     sender_id: str = ""
 
     def to_json(self) -> str:
-        """Convierte el mensaje a formato JSON"""
         return json.dumps(asdict(self))
 
     @classmethod
     def from_json(cls, json_str: str) -> 'Message':
-        """Crea un mensaje desde su representación JSON"""
         data = json.loads(json_str)
         return cls(**data)
 
 
 @dataclass
 class AlertMessage(Message):
-    """Mensaje de alerta enviado por un espía"""
-    position: Tuple[float, float] = field(default=(0.0, 0.0))  # (latitud, longitud)
-    emergency_level: str = "BAJA"  # BAJA, MEDIA, ALTA, CRÍTICA
-    emergency_type: str = "VIGILANCIA"  # Tipo de emergencia
+    position: Tuple[float, float] = field(default=(0.0, 0.0))
+    emergency_level: str = "BAJA"
+    emergency_type: str = "VIGILANCIA"
     description: str = ""
 
     def __post_init__(self):
         self.message_type = MessageType.ALERT
-
-        # Validar posición
         if not isinstance(self.position, tuple) or len(self.position) != 2:
-            raise ValueError(f"Posición inválida: {self.position}. Debe ser una tupla (latitud, longitud).")
-
-        # Validar nivel de emergencia
-        valid_levels = ["BAJA", "MEDIA", "ALTA", "CRÍTICA"]
-        if self.emergency_level not in valid_levels:
-            raise ValueError(f"Nivel de emergencia inválido: {self.emergency_level}. Debe ser uno de {valid_levels}.")
-
-        # Validar tipo de emergencia
-        if not isinstance(self.emergency_type, str) or not self.emergency_type:
-            raise ValueError("El tipo de emergencia debe ser una cadena no vacía.")
+            raise ValueError(f"Posici\u00f3n inv\u00e1lida: {self.position}.")
+        if self.emergency_level not in ["BAJA", "MEDIA", "ALTA", "CR\u00cdTICA"]:
+            raise ValueError(f"Nivel de emergencia inv\u00e1lido: {self.emergency_level}.")
+        if not self.emergency_type:
+            raise ValueError("El tipo de emergencia no puede estar vac\u00edo.")
 
     @classmethod
     def from_json(cls, json_str: str) -> 'AlertMessage':
-        """Crea un mensaje de alerta desde su representación JSON"""
         data = json.loads(json_str)
-        # Asegura que los datos estén en el formato esperado
         data['position'] = tuple(data['position'])
         return cls(**data)
 

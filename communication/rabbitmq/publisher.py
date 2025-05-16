@@ -116,13 +116,13 @@ class RabbitMQPublisher:
             if not routing_key and hasattr(message, 'message_type'):
                 routing_key = message.message_type
 
-            # Serializar el mensaje
-            serialized_message = pickle.dumps(message)
 
-            # Propiedades del mensaje
+            serialized_message = message.to_json().encode("utf-8")
+
+
             properties = pika.BasicProperties(
-                delivery_mode=2,  # Persistente
-                content_type='application/python-pickle',
+                delivery_mode=2,
+                content_type='application/json',
                 timestamp=int(time.time())
             )
 
@@ -131,7 +131,6 @@ class RabbitMQPublisher:
                 exchange=self.exchange,
                 routing_key=routing_key,
                 body=serialized_message,
-                properties=properties
             )
 
             logger.debug(f"Mensaje publicado con routing_key '{routing_key}': {message}")
