@@ -1,0 +1,8 @@
+# Usa la imagen oficial con la interfaz de gestión
+FROM rabbitmq:3-management
+
+# Opcional: establece un hostname
+ENV RABBITMQ_NODENAME=rabbit
+
+# Expón los puertos necesarios
+EXPOSE 5672 15672
